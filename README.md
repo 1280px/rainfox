@@ -6,8 +6,7 @@ is make Firefox look more theme-adaptive, smooth and homogeneous.
 - Animated auto-hide bookmark panel
 - Fully theme-adaptive context menus
 - Small rounded tabs
-- Renewed theme-adaptive 'Customize...' page<br><i>　　　　　　　　　　　..and more!<i>
-
-
-
-<i>there'll be more information and stuff soon-ish...</i>
+- Renewed theme-adaptive 'Customize...' page<br><i>　　　　　　　　　　　　　　　..and more!<i>
+<br>
+<br>
+<b>[　　there'll be more information and stuff soon-ish...　　]</b>
