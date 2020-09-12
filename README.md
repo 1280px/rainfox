@@ -1,4 +1,4 @@
-# RainFox v0.1
+# / 　　／ /／　/　/　　RainFox v0.1　/／　/ ／ 　　／/
 Firefox userChrome.css that makes browser look more complete. Partially based on MaterialFox and QuietFox 
 
 <b>Features:</b>
