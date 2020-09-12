@@ -1,5 +1,5 @@
 # / 　　／ /／　/　/　　RainFox v0.1　/／　/ ／ 　　／/
-Started as MaterialFox and QuietFox mix, the main task of this userChrome.xss
+Started as MaterialFox and QuietFox mix, the main task of this userChrome.xss<br>
 is make Firefox look more theme-adaptive, smooth and homogeneous.
 
 <b>Also RainFox has some cool features:</b>
