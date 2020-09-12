@@ -7,6 +7,8 @@ is make Firefox look more theme-adaptive, smooth and homogeneous.
 - Theme-adaptive context menus and [WIP]pop-ups
 - Small rounded tabs
 - Renewed theme-adaptive 'Customize...' page<br><i>　　　　　　　　　　　　　　　　　..and more!<i>
+
+Style tested on <b>Windows 7 SP1 64bit</b>
 <br>
 <br>
 <b>[　　there'll be more information and stuff soon-ish...　　]</b>
