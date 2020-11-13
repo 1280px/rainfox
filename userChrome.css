@@ -11,6 +11,10 @@ This theme based on MaterialFox and QuietFox, check them out if you like RainFox
 
 
 
+
+
+
+
 /* ### ###  C U S T O M I Z A T I O N   ### ### */
 * { 
 	--animation-speed: 0.2s;
@@ -279,7 +283,7 @@ tab[visuallyselected] {
 	box-shadow: 0px 3px 12px -4px #333 !important;
 	}
 
-/* menubar-items paddings cancel */
+
 
 
 
@@ -370,3 +374,21 @@ tab[visuallyselected] {
 #fullscr-toggler {
 	background: var(--toolbar-bgcolor) !important;
 }
+
+
+
+
+/* Hourglass loaging (make option to ON/OFF it in the future) */
+/* thx /u/It_Was_The_Other_Guy */
+
+
+.tab-throbber::before{
+  background-image: url("chrome://browser/skin/tabbrowser/hourglass.svg") !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
+
+
