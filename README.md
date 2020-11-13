@@ -12,7 +12,6 @@ Firefox usage experience so much better!</i>
 - Small rounded tabs without Win10-like line at top
 - 1px URLbar borders changed to shadows
 - Customizable tabs & buttons rounding and animation speed
-- [optional] Hourglass loading tab animation*<br><i>　　　　　　　　　　　　　　　　　..and more!<i>
-*currently impossible to turn OFF; change values in userChrome.css to customize
+- [optional] Hourglass loading tab animation*<br><i>　　　　　　　　　　　　　　　　　..and more!<i><br>*currently impossible to turn OFF; change values in userChrome.css to customize
 
 <b>Style tested on Windows 7 64bit, Windows 8.1 64bit and Windows 10 64bit</b>
