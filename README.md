@@ -16,4 +16,4 @@ Firefox usage experience so much better!</i>
 <br><i>　　　　　　　　　　　　　　　　　..and more!<i>
 <br>*currently impossible to turn OFF; turned ON by default
 
-<b>Style tested on [FF81] Windows 7, [FF80] Windows 8.1 and [FF84] Windows 10</b>
+<b>Style tested on Windows 7, Windows 8.1 and Windows 10</b>
