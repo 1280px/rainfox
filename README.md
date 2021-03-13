@@ -15,7 +15,7 @@ but with some improvements of the previous design.
 - Small URLbar changes
 - Hourglass tab loading animation
 <br><i>　　　　　　　　　　　　　　　　　..and more!<i>
-  You can also configure what features should be included in <code>userChrome.css</code>, 
+  You can also configure what features should be included in <code>userChrome.css</code>,<br> 
   or change some values (such as UI roundness, animation speed etc.)
 
 <b>Style was tested on Windows 7, Windows 8.1 and Windows 10. 
