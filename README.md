@@ -1,4 +1,7 @@
 # / 　/ //　/　/　　RainFox v0.3a　//　/ /　　//
+
+![Test](https://github.com/1280px/rainfox/blob/master/rainpix.png)
+
 Started as remix of MaterialFox and QuietFox, the main task of this userChrome.css style<br>
 is to make Firefox more theme-adaptive, smooth and homogeneous. 
 After Proton UI concepts came it, this style also tend to be some kind of "Photon-theme-Restorer"
