@@ -1,0 +1,64 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+tab:active .tab-background {
+	box-shadow: 0px 2px 2px 0px #333 !important;
+	}
+.tabbrowser-tab[multiselected] .tab-background::before, tab[visuallyselected] .tab-background::before {
+	border-bottom-right-radius: var(--tab-corner-rounding) !important;
+	left: 0px !important;
+	transform: translateX(calc(-1 * var(--tab-corner-rounding) - 1px)) !important;
+	transition: var(--animation-speed) !important;
+	}
+.tabbrowser-tab[multiselected] .tab-background::after, tab[visuallyselected] .tab-background::after {
+	border-bottom-left-radius: var(--tab-corner-rounding) !important;
+	right: 0px !important;
+	transform: translateX(var(--tab-corner-rounding)) !important;
+	transition: var(--animation-speed) !important;
+	}
+.tab-background, .tab-loading-burst  {
+	border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
+	margin-bottom: -3px !important;
+	}
+tab:not(:active) .tab-background {
+	transition: background-color var(--animation-speed) !important;
+	}
+tab:not([selected]):hover .tab-background {
+	background-color: var(--toolbarbutton-hover-background) !important;
+	}
+tab {
+	overflow: hidden !important;
+	}
+.tab-line {
+	display: none !important;
+	}
+tab:not([beforeselected-visible])::after {
+	margin-top: 4px !important;
+	margin-bottom: 4px !important;
+	transition: border-color var(--animation-speed), margin-top var(--animation-speed) !important;
+	}
+tab[beforehovered]::after, tab:hover::after {
+	border-color: transparent !important;
+	margin-top: 20px !important;
+	}
+#navigator-toolbox {
+	--tabs-border-color: transparent !important;
+	}
+.titlebar-spacer[type="pre-tabs"] {
+	border-inline-end: 0px !important;
+	width: 0px !important;
+	}
+tabs:not([overflow]) .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+	padding-left: 12px !important;
+	}
+tabs[overflow] .tabbrowser-arrowscrollbox > .scrollbutton-up {
+	margin-left: 12px !important;
+	}
+.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+	padding-right: var(--tab-corner-rounding) !important;
+	}
+.tabbrowser-tab[multiselected], .tabbrowser-tab[visuallyselected="true"] {
+	box-shadow: 0px 2px 4px -1px #333;
+	border-top-left-radius: var(--tab-corner-rounding) !important;
+	border-top-right-radius: var(--tab-corner-rounding) !important;
+	top: 5px;
+}

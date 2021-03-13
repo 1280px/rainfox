@@ -1,0 +1,8 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+/* thx /u/It_Was_The_Other_Guy */
+.tab-throbber::before{
+  background-image: url("chrome://browser/skin/tabbrowser/hourglass.svg") !important;
+  animation: none !important;
+  transition: none !important;
+}

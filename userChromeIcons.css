@@ -1,0 +1,14 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+/* i'll probably use custom icons in the future since original new look pretty odd ig */
+
+/* bookmark folder icon */
+.bookmark-item[container]:not([query]) {
+	list-style-image: url("chrome://browser/skin/folder.svg") !important;
+}
+
+/* bookmark toolbar icon */
+#bookmarksToolbarFolderMenu, #BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {
+	list-style-image: url("chrome://browser/skin/bookmarks-toolbar.svg") !important;
+}
+

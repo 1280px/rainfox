@@ -1,393 +1,65 @@
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////
-///|¯¯¯¯¯¯¯¯¯¯'|/////|¯¯¯¯¯¯|/////|¯¯|///|¯|//////|¯|///|¯¯¯¯¯¯¯¯¯¯|/////|ЖЖЖЖ|/////|¯¯|////|¯¯|///
-///|                  |///|¯              ¯|///|   |///|  |¯¯|///|  |///|  |////////////|ЖЖЖЖЖЖ|///'//|  ¯¯¯¯  |/////
-///|               |//// |                  |///|   |///|  |/|¯¯|/|  |///|   ¯¯¯¯¯¯¯¯'|///|     '   |        |//'/////|    |///////
-----|  |¯¯¯¯¯¯|¯|----|  |¯¯¯¯¯¯|  |----'|   |----'|  |----|¯¯|  |----'|  |¯¯¯¯¯¯¯¯' ----|         |    '   |--------|¯¯   ¯¯|-------
- '   '|  |          '|  |     |  |          |  |     '|   '|     |  |          '|  |     '|  |                    '|         |       '|      '|¯  |¯¯¯'|  ¯|      
-                                                                                                                                                                                  
-This theme based on MaterialFox and QuietFox, check them out if you like RainFox!                                 */
-
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+ /*  /   /  //   /    /  /     /  /    /   /       /   
+/______   / / __    /   _____    /  ___  ___  /   /   /
+|      \.--.-(ЖЖ)-----./  __/       \  \/  / /       / 
+|      /     |  |  .  |   _|         /    /    v0.3a   
+|__|\__\___._|__|__|__|__|          /__/\__\          /
 
 
+To disable/enable some part of the style, add/remove "/* " before its @import. Example:
 
+@import "exampleStyleNameSorryIHaveNoImagination.css"                [ ENABLED ]
 
+/* @import "exampleStyleNameSorryIHaveNoImagination.css"             [ DISABLED ]
 
 
 
-/* ### ###  C U S T O M I Z A T I O N   ### ### */
-* { 
-	--animation-speed: 0.2s;
-	--menu-corner-rounding: 2px;
-	--menu-item-height: 16px;
-	--tab-corner-rounding: 10px;
-	--button-corner-rounding: 2px;
-	}
+
+
+/* ### ###     Configure variables      ### ### */
+@import "userChromeVariables.css";
 
 
 
 
 
 /* ###  Centered Autohide Bookmark Toolbar  ### */
-#PlacesToolbarItems {
-	justify-content: center !important;
-	display: flex !important;
-	overflow: hidden !important;
-	}
-#PersonalToolbar {
-	visibility: collapse !important;
-	transform: translateY(-30%) !important;
-	opacity: 0% !important;
-	transition: var(--animation-speed) !important;
-	}
-#navigator-toolbox:hover > #PersonalToolbar {
-	visibility: visible !important; 
-	transform: translateY(0%) !important;
-	opacity: 100% !important;
-	}
-
-
-
+@import "userChromeBookmarks.css";
 
 
 /* ### ###    Adaptive Context Menus    ### ### */
-
-/* hide system context menus */
-#context-navigation,
-#context-sep-navigation,
-#context-bookmarklink,
-#context-viewinfo,
-#context-viewpartialsource-selection,
-#inspect-separator,
-#context-savelink,
-#context-sendimage,
-#context-setDesktopBackground,
-#context_reloadTab,
-#context_moveTabOptions,
-#context_bookmarkTab,
-.bookmarks-actions-menuseparator,
-.openintabs-menuitem {
-	display: none !important;
-	}
-menu,
-menuitem,
-menucaption {
-	-moz-appearance: none !important;
-	}
-menupopup,
-menupopup menuitem,
-menupopup menu,
-menupopup menuseparator {
-	-moz-appearance: none !important;
-	}
-
-/* paddings and stuff */
-menu,
-menuitem,
-menucaption {
-	padding: 0px 1px !important;
-	height: 24px;
-	transition: var(--animation-speed) !important;
-	}
-menupopup {
-	padding: 6px 9px 8px !important;
-	margin: -6px -9px 0 !important;
-	border: 0 !important;
-	background: 0 !important;
-	}
-menu[open] menupopup {
-	margin: -12px -9px 0 !important;
-	}
-menupopup menuseparator {
-	margin-top: 5px !important;
-	margin-bottom: 5px !important;
-	padding: 0px !important;
-	border-bottom: none !important;
-	opacity: 20% !important;
-	}
-.panel-arrowcontent {
-	padding-top: 0px !important;
-	border: none !important;
-	}
-.autocomplete-richlistitem[selected] {
-	background-color: var(--autocomplete-popup-highlight-background);
-	color: var(--autocomplete-popup-highlight-color);
-}
-/* shadows & corners for menus */
-.popup-internal-box,
-panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox,
-#PopupSearchAutoComplete > *,
-.menupopup-arrowscrollbox {
-	border-radius: var(--menu-corner-rounding) !important;
-	box-shadow: 0px 1px 10px -3px #0009 !important;
-	padding: 6px 0 !important;
-	}
-.panel-arrowcontainer .panel-arrowcontent, .popup-internal-box, hbox[flex="1"][part="innerbox"] {
-	border-radius: var(--menu-corner-rounding) !important;
-	}
-.in-bookmarks-menu {
-	padding-bottom: 5px !important;
-	padding-top: 5px !important;
-	}
-menu:not(.subviewbutton) > .menu-right image {
-	margin-right: -3px !important;
-	margin-top: -2px !important;
-	border: 5px solid var(--toolbar-color) !important;
-	border-top-color: transparent !important;
-	border-right-color: transparent !important;
-	border-bottom-color: transparent !important;
-	opacity: 0%;
-	padding: 4px 0px;
-	}
-
-/* make menus adapt to theme */
-menu,
-menuitem,
-menucaption {
-	color: var(--arrowpanel-color) !important;
-	}
-.popup-internal-box,
-panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox,
-#PopupSearchAutoComplete > *,
-.menupopup-arrowscrollbox {
-	background: var(--arrowpanel-background) !important;
-	}
-menu[_moz-menuactive="true"]:not([disabled="true"]), 
-menuitem[_moz-menuactive="true"]:not([disabled="true"]), 
-menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
-	background-color: var(--arrowpanel-dimmed) !important;
-	}
-menu[disabled="true"], 
-menuitem[disabled="true"], 
-menucaption[disabled="true"] {
-	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
-	opacity: 50%;
-	}
-menu[disabled="true"][_moz-menuactive="true"], 
-menuitem[disabled="true"][_moz-menuactive="true"], 
-menucaption[disabled="true"][_moz-menuactive="true"] {
-	background-color: transparent !important;
-	}
-
-/* menubar tweaks */
-#main-menubar:not(:-moz-window-inactive) {
-	background-color: transparent !important;
-}
-#main-menubar {
-	height: 18px !important;
-	text-shadow: 0 0 .5em #999, 0 0 .5em #666, 0 1px 0 #3336 !important;
-}
-#main-menubar > menu:hover {
-	background-color: var(--arrowpanel-background) !important;
-	text-shadow: none !important;
-}
+@import "userChromeContextMenus.css";
 
 
-
+/* ### ###      Small Rounded Tabs      ### ### */
+@import "userChromeTabs.css";
 
 
 /* ### ###   Animated Toolbar Buttons   ### ### */
-toolbarbutton,
-.subviewbutton,
-stack, 
-.toolbarbutton-icon,
-vbox,
-#identity-box, 
-#tracking-protection-icon-container {
-	transition: background-color var(--animation-speed) !important;
-	} 
-.urlbar-icon {
-	width: 28px !important;
-	height: 28px !important;
-	padding: 6px !important;
-	transition: var(--animation-speed) !important;
-	}
-#reader-mode-button {
-	width: 30px !important;
-	height: 28px !important;
-	}
-#PanelUI-button {
-	padding-right: 5px !important;
-	padding-left: 5px !important;
-	margin-left: 5px !important;
-	}
-#tabs-newtab-button {
-	margin-left: 1px !important;
-	margin-bottom: 1px !important;
-	padding-bottom: 1px !important;
-	}
+@import "userChromeAnimations.css";
 
 
+/* ### ###  Menubar Animation & Shadow  ### ### */
+@import "userChromeMenubar.css";
 
 
-
-/* ### ###     Animated Curved Tabs     ### ### */
-tab[visuallyselected] .tab-background::before {
-	border-bottom-right-radius: var(--tab-corner-rounding) !important;
-	left: 0px !important;
-	transform: translateX(calc(-1 * var(--tab-corner-rounding) - 1px)) !important;
-	box-shadow: 4px 4px 0 4px var(--toolbar-bgcolor) !important;
-	transition: var(--animation-speed) !important;
-	}
-tab[visuallyselected] .tab-background::after {
-	border-bottom-left-radius: var(--tab-corner-rounding) !important;
-	right: 0px !important;
-	transform: translateX(var(--tab-corner-rounding)) !important;
-	box-shadow: -4px 4px 0 4px var(--toolbar-bgcolor) !important;
-	transition: var(--animation-speed) !important;
-	}
-.tab-background, .tab-loading-burst  {
-	border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
-	margin-bottom: -3px !important;
-	}
-tab:not(:active) .tab-background {
-	transition: background-color var(--animation-speed) !important;
-	}
-tab:not([selected]):hover .tab-background {
-	background-color: var(--toolbarbutton-hover-background) !important;
-	}
-tab {
-	padding-top: 3px !important;
-	overflow: hidden !important;
-	}
-.tab-line {
-	display: none !important;
-	}
-tab:not([beforeselected-visible])::after {
-	margin-top: 4px !important;
-	margin-bottom: 4px !important;
-	transition: border-color var(--animation-speed), margin-top var(--animation-speed) !important;
-	}
-tab[beforehovered]::after,
-tab:hover::after {
-	border-color: transparent !important;
-	margin-top: 20px !important;
-	}
-#navigator-toolbox {
-	--tabs-border-color: transparent !important;
-	}
-.titlebar-spacer[type="pre-tabs"] {
-	border-inline-end: 0px !important;
-	width: 0px !important;
-	}
-tabs:not([overflow]) .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-	padding-left: 12px !important;
-	}
-tabs[overflow] .tabbrowser-arrowscrollbox > .scrollbutton-up {
-	margin-left: 12px !important;
-	}
-.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-	padding-right: var(--tab-corner-rounding) !important;
-	}
-tab[visuallyselected] {
-	box-shadow: 0px 3px 12px -4px #333 !important;
-	}
+/* ### ###     Small URLbar Changes     ### ### */
+@import "userChromeURLbar.css";
 
 
+/* WIP WIP     Legacy Icons Updater     WIP WIP */
+@import "userChromeIcons.css";
 
 
-
-/* ### ###    URLbar borders remover    ### ### */
-#urlbar[focused="true"] > #urlbar-background {
-	border-color: var(--lwt-toolbar-field-focus) !important;
-	box-shadow: 0px 1px 14px -3px #0009 !important;
-}
-#urlbar:not([focused="true"]):-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme {
-	height: 32px !important;
-	top: -1px !important;
-}
-.tabbrowser-tab {
-	background-color: transparent !important;
-	border-top: 1px solid var(--tabs-border-color);
-	background-clip: padding-box;
-}
+/* ###   Hourglass Tabs Loading Animation   ### */
+@import "userChromeHourglassTabLoad.css";
 
 
+/* WIP   Adaptive Pop-ups & Notifications   WIP */
+@import "userChromePopups.css";
 
 
-
-/* ###   Adaptive Pop-ups & Notifications   ### */
-.panel-footer > xul|button:not([disabled])[default] {
-	color: inherit !important;
-	background-color: var(--toolbarbutton-icon-fill-attention);
-	filter: brightness(0.85);
-}
-.panel-footer > xul|button:not([disabled])[default]:hover {
-	background-color: var(--toolbarbutton-icon-fill-attention);
-	filter: brightness(1.15);
-}
-#customization-panelWrapper > .panel-arrowbox > .panel-arrow[side="top"] {
-	-moz-context-properties: fill, stroke;
-	fill: var(--arrowpanel-background) !important;
-	stroke: var(--arrowpanel-background) !important;
-}
-:-moz-any(panel, menupopup)::part(arrow) {
-	-moz-context-properties: fill, stroke;
-	fill: var(--arrowpanel-background) !important;
-	stroke: var(--arrowpanel-background) !important;
-}
-
-
-
-/* ### ### Adaptive 'Customize...' Page ### ### */
-#customization-footer {
-	background-color: var(--arrowpanel-background) !important;
-}
-
-/* done button */
-#customization-done-button:-moz-any(:active, :hover):not([disabled]) {
-	background-color: var(--toolbarbutton-icon-fill-attention) !important;
-	filter: brightness(1.2) !important;
-}
-#customization-done-button {
-	color: var(--arrowpanel-color) !important;
-	border: 2px solid #6664 !important;
-	background-color: var(--toolbarbutton-icon-fill-attention) !important;
-	transition: var(--animation-speed) !important;
-	box-shadow: 0px 0px 3px -2px var(--autocomplete-popup-highlight-background) !important;
-}
-
-/* other buttons */
-.customizationmode-checkbox:not(:-moz-lwtheme):not([disabled]), .customizationmode-button {
-	color: var(--arrowpanel-color) !important;
-}
-.customizationmode-button {
-	border: 1px solid transparent !important;
-	background-color: var(--toolbarbutton-hover-background) !important;
-	transition: var(--animation-speed) !important;
-}
-.customizationmode-button:-moz-any(:active, :hover):not([disabled]), .customizationmode-button[open], .customizationmode-button[checked] {
-	background-color: var(--toolbarbutton-active-background) !important;
-}
-
-/* pop-ups and other elements */
-#customization-lwtheme-menu-header {
-	margin-top: 0px !important;
-}
-.customization-uidensity-menuitem {
-	height: 44px !important;
-}
-#customization-uidensity-menuitem-compact {
-	margin-top: 5px;
-}
-
-#fullscr-toggler {
-	background: var(--toolbar-bgcolor) !important;
-}
-
-
-
-
-/* Hourglass loaging (make option to ON/OFF it in the future) */
-/* thx /u/It_Was_The_Other_Guy */
-
-
-.tab-throbber::before{
-  background-image: url("chrome://browser/skin/tabbrowser/hourglass.svg") !important;
-  animation: none !important;
-  transition: none !important;
-}
-
+/* ### ##  Adaptive 'Customize...' Page  ## ### */
+@import "userChromePageCustomize.css";
 
 
 

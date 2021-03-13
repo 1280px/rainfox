@@ -1,0 +1,115 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+/* hide system context menus and action btns */
+#context-navigation, #context-sep-navigation, #context-bookmarklink, #context-viewinfo, #context-viewpartialsource-selection, #inspect-separator, #context-savelink, #context-sendimage, #context-setDesktopBackground, #context_reloadTab, #context_moveTabOptions, #context_bookmarkTab, .bookmarks-actions-menuseparator, .openintabs-menuitem {
+	display: none !important;
+	}
+menu, menuitem, menucaption, .autocomplete-richlistbox,.autocomplete-richlistitem {
+	-moz-appearance: none !important;
+	}
+menupopup, menupopup menuitem, menupopup menu, menupopup menuseparator {
+	-moz-appearance: none !important;
+	}
+
+/* paddings and stuff */
+menu, menuitem, menucaption, .ac-title {
+	padding: 0px 1px !important;
+	height: 24px;
+	transition: var(--animation-speed) !important;
+	-moz-box-align:    center !important;
+	}
+menupopup {
+	padding: 6px 9px 8px !important;
+	margin: -6px -9px 0 !important;
+	border: 0 !important;
+	background: 0 !important;
+	}
+menu[open] menupopup {
+	margin: -12px -9px 0 !important;
+	}
+menupopup menuseparator {
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+	padding: 0px !important;
+	border-bottom: none !important;
+	opacity: 20% !important;
+	}
+#PopupAutoComplete > richlistbox > richlistitem {
+	transition: var(--animation-speed);
+  }
+.subviewbutton.panel-subview-footer {
+	border-top: 0px solid var(--panel-separator-color) !important;
+	transition: var(--animation-speed);
+  }
+.panel-footer, .panel-footer:hover {
+	border-top: 0px solid var(--panel-separator-color) !important;
+	transition: var(--animation-speed) !important;
+  }
+
+/* shadows & corners for menus */
+.popup-internal-box, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
+	border-radius: var(--menu-corner-rounding) !important;
+	box-shadow: 0px 1px 10px -3px #0009 !important;
+	padding: 6px 0 !important;
+	}
+panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox {
+	border-radius: var(--menu-corner-rounding) !important;
+	box-shadow: 0px 1px 10px -3px #0009 !important;
+	padding: 3px 0 !important;
+	}
+.panel-arrowcontainer .panel-arrowcontent, .popup-internal-box, hbox[flex="1"][part="innerbox"] {
+	border-radius: var(--menu-corner-rounding) !important;
+	}
+.in-bookmarks-menu {
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
+	}
+menu:not(.subviewbutton) > .menu-right image {
+	margin-right: -3px !important;
+	margin-top: -2px !important;
+	border: 5px solid var(--toolbar-color) !important;
+	border-top-color: transparent !important;
+	border-right-color: transparent !important;
+	border-bottom-color: transparent !important;
+	opacity: 0%;
+	padding: 4px 0px;
+	}
+.panel-arrowcontent {
+	padding-top: 0px !important;
+	border: none !important;
+	}
+
+/* make menus adapt to theme */
+menu, menuitem, menucaption, .ac-title-text {
+	color: var(--arrowpanel-color) !important;
+	}
+.popup-internal-box, .autocomplete-richlistbox, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
+	background: var(--arrowpanel-background) !important;
+	border: 0px !important;
+	}
+menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]), menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
+	background-color: var(--arrowpanel-dimmed) !important;
+	}
+menu[disabled="true"], menuitem[disabled="true"], menucaption[disabled="true"], .ac-title-text[disabled="true"] {
+	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
+	opacity: 50%;
+	}
+menu[disabled="true"][_moz-menuactive="true"], menuitem[disabled="true"][_moz-menuactive="true"], menucaption[disabled="true"][_moz-menuactive="true"], .autocomplete-richlistbox[disabled="true"][_moz-menuactive="true"] {
+	background-color: transparent !important;
+	}
+
+
+
+
+
+/* menu arrows */
+.menu-right {
+	appearance: auto !important;
+	-moz-default-appearance: menuarrow;
+	content: url(chrome://browser/skin/customizableui/menu-arrow.svg) !important;
+	fill: currentColor, var(--arrowpanel-color);
+	opacity: 0.6;
+	float: inline-end;
+	transform: translateY(-1px);
+	-moz-context-properties: fill;
+}

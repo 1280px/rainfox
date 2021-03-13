@@ -1,0 +1,21 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+.panel-footer > xul|button:not([disabled])[default] {
+	color: inherit !important;
+	background-color: var(--toolbarbutton-icon-fill-attention);
+	filter: brightness(0.85);
+  }
+.panel-footer > xul|button:not([disabled])[default]:hover {
+	background-color: var(--toolbarbutton-icon-fill-attention);
+	filter: brightness(1.15);
+  }
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow[side="top"] {
+	-moz-context-properties: fill, stroke;
+	fill: var(--arrowpanel-background) !important;
+	stroke: var(--arrowpanel-background) !important;
+  }
+:-moz-any(panel, menupopup)::part(arrow) {
+	-moz-context-properties: fill, stroke;
+	fill: var(--arrowpanel-background) !important;
+	stroke: var(--arrowpanel-background) !important;
+  }

@@ -1,0 +1,50 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+#customization-footer {
+	background-color: var(--arrowpanel-background) !important;
+}
+
+/* done button */
+#customization-done-button:-moz-any(:active, :hover):not([disabled]) {
+	background-color: var(--toolbarbutton-icon-fill-attention) !important;
+	filter: brightness(1.2) !important;
+}
+#customization-done-button {
+	color: var(--arrowpanel-color) !important;
+	border: 2px solid #6664 !important;
+	background-color: var(--toolbarbutton-icon-fill-attention) !important;
+	transition: var(--animation-speed) !important;
+	box-shadow: 0px 0px 3px -2px var(--autocomplete-popup-highlight-background) !important;
+}
+
+/* other buttons */
+.customizationmode-checkbox:not(:-moz-lwtheme):not([disabled]), .customizationmode-button {
+	color: var(--arrowpanel-color) !important;
+}
+.checkbox-label {
+	color: var(--arrowpanel-color) !important;
+}
+.customizationmode-button {
+	border: 1px solid transparent !important;
+	background-color: var(--toolbarbutton-hover-background) !important;
+	transition: var(--animation-speed) !important;
+}
+.customizationmode-button:-moz-any(:active, :hover):not([disabled]), .customizationmode-button[open], .customizationmode-button[checked] {
+	background-color: var(--toolbarbutton-active-background) !important;
+}
+
+
+/* pop-ups and other elements */
+#customization-lwtheme-menu-header {
+	margin-top: 0px !important;
+}
+.customization-uidensity-menuitem {
+	height: 44px !important;
+}
+#customization-uidensity-menuitem-compact {
+	margin-top: 5px;
+}
+
+#fullscr-toggler {
+	background: var(--toolbar-bgcolor) !important;
+}

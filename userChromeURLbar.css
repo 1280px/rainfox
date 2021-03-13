@@ -1,0 +1,20 @@
+/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+
+#urlbar[focused="true"] > #urlbar-background {
+	border-color: var(--lwt-toolbar-field-focus) !important;
+	box-shadow: 0px 1px 14px -3px #0009 !important;
+  }
+#urlbar:not([focused="true"]):-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme {
+	height: 32px !important;
+	top: -1px !important;
+  }
+.tabbrowser-tab {
+	background-color: transparent !important;
+	border-top: 1px solid var(--tabs-border-color);
+	background-clip: padding-box;
+  }
+.urlbarView-body-inner {
+	border-color: var(--panel-separator-color) !important;
+  }
+#pageActionSeparator, #tracking-protection-icon-container, #identity-box[pageproxystate="valid"].notSecureText, #identity-box[pageproxystate="valid"].chromeUI, #identity-box[pageproxystate="valid"].extensionPage, #urlbar-label-box {
+	border-image: linear-gradient(transparent 15%, var(--toolbarbutton-hover-background) 15%, var(--toolbarbutton-hover-background) 85%, transparent 85%);  }
