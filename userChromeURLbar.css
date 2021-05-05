@@ -1,20 +1,32 @@
-/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
 #urlbar[focused="true"] > #urlbar-background {
 	border-color: var(--lwt-toolbar-field-focus) !important;
 	box-shadow: 0px 1px 14px -3px #0009 !important;
-  }
-#urlbar:not([focused="true"]):-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme {
-	height: 32px !important;
-	top: -1px !important;
-  }
-.tabbrowser-tab {
-	background-color: transparent !important;
-	border-top: 1px solid var(--tabs-border-color);
-	background-clip: padding-box;
-  }
+}
 .urlbarView-body-inner {
 	border-color: var(--panel-separator-color) !important;
-  }
-#pageActionSeparator, #tracking-protection-icon-container, #identity-box[pageproxystate="valid"].notSecureText, #identity-box[pageproxystate="valid"].chromeUI, #identity-box[pageproxystate="valid"].extensionPage, #urlbar-label-box {
-	border-image: linear-gradient(transparent 15%, var(--toolbarbutton-hover-background) 15%, var(--toolbarbutton-hover-background) 85%, transparent 85%);  }
+}
+.urlbarView-row-inner {
+	transition: var(--userChrome-animation-speed) !important;
+	border-radius: var(--toolbarbutton-border-radius) !important;
+}
+.urlbar-icon {
+	width: 28px !important;	height: 28px !important;
+	padding: 6px !important;
+	transition: var(--userChrome-animation-speed) !important;
+}
+
+/* smaller search engine paddings */
+.searchbar-engine-one-off-item {
+	margin: 0px 4px !important;
+}
+#urlbar .searchbar-engine-one-off-item {
+	margin-inline-end: 4px !important;
+}
+
+/* remove default border */
+#urlbar-background, #searchbar {
+	border: 0px solid transparent !important;
+	border-radius: var(--toolbarbutton-border-radius);
+}

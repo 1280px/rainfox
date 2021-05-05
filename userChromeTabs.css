@@ -1,64 +1,110 @@
-/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-tab:active .tab-background {
-	box-shadow: 0px 2px 2px 0px #333 !important;
-	}
+/* this part of code is an absolute mess. sorry about that, gonna sort it indafuture */
+.tabbrowser-tab {
+	padding-inline: 2px !important;
+	background-color: transparent !important; background-clip: padding-box;
+	border-top: 1px solid var(--tabs-border-color);
+}
 .tabbrowser-tab[multiselected] .tab-background::before, tab[visuallyselected] .tab-background::before {
-	border-bottom-right-radius: var(--tab-corner-rounding) !important;
-	left: 0px !important;
-	transform: translateX(calc(-1 * var(--tab-corner-rounding) - 1px)) !important;
-	transition: var(--animation-speed) !important;
-	}
+	border-bottom-right-radius: var(--userChrome-tab-rounding) !important;
+	transform: translateX(calc(-1 * var(--userChrome-tab-rounding) - 1px)) !important; transition: var(--userChrome-animation-speed) !important;
+}
 .tabbrowser-tab[multiselected] .tab-background::after, tab[visuallyselected] .tab-background::after {
-	border-bottom-left-radius: var(--tab-corner-rounding) !important;
-	right: 0px !important;
-	transform: translateX(var(--tab-corner-rounding)) !important;
-	transition: var(--animation-speed) !important;
-	}
+	border-bottom-left-radius: var(--userChrome-tab-rounding) !important;
+	transform: translateX(var(--userChrome-tab-rounding)) !important; transition: var(--userChrome-animation-speed) !important;
+}
+.tabbrowser-tab[multiselected], .tabbrowser-tab[visuallyselected="true"] {
+	/*! box-shadow: 0px 2px 4px -1px #333; */
+	border-top-left-radius: var(--userChrome-tab-rounding) !important; border-top-right-radius: var(--userChrome-tab-rounding) !important;
+}
 .tab-background, .tab-loading-burst  {
-	border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
-	margin-bottom: -3px !important;
-	}
+	border-radius: var(--userChrome-tab-rounding) var(--userChrome-tab-rounding) 0px 0px !important;
+	margin-bottom: -1px !important;
+}
 tab:not(:active) .tab-background {
-	transition: background-color var(--animation-speed) !important;
-	}
+	transition: background-color var(--userChrome-animation-speed) !important;
+}
 tab:not([selected]):hover .tab-background {
 	background-color: var(--toolbarbutton-hover-background) !important;
-	}
+}
 tab {
 	overflow: hidden !important;
-	}
-.tab-line {
-	display: none !important;
-	}
+}
 tab:not([beforeselected-visible])::after {
-	margin-top: 4px !important;
-	margin-bottom: 4px !important;
-	transition: border-color var(--animation-speed), margin-top var(--animation-speed) !important;
-	}
+	margin-top: 6px !important;	margin-bottom: 4px !important;
+	transition: border-color var(--userChrome-animation-speed), margin-top var(--userChrome-animation-speed) !important;
+}
 tab[beforehovered]::after, tab:hover::after {
 	border-color: transparent !important;
 	margin-top: 20px !important;
-	}
+}
+
+/* tabbar zone improvements */
 #navigator-toolbox {
-	--tabs-border-color: transparent !important;
-	}
+	--tabs-border-color: #4442 !important;
+}
+#navigator-toolbox {
+	border-bottom: 1px solid var(--toolbar-bgcolor) !important;
+}
 .titlebar-spacer[type="pre-tabs"] {
 	border-inline-end: 0px !important;
 	width: 0px !important;
-	}
-tabs:not([overflow]) .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-	padding-left: 12px !important;
-	}
-tabs[overflow] .tabbrowser-arrowscrollbox > .scrollbutton-up {
-	margin-left: 12px !important;
-	}
+}
 .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-	padding-right: var(--tab-corner-rounding) !important;
-	}
-.tabbrowser-tab[multiselected], .tabbrowser-tab[visuallyselected="true"] {
-	box-shadow: 0px 2px 4px -1px #333;
-	border-top-left-radius: var(--tab-corner-rounding) !important;
-	border-top-right-radius: var(--tab-corner-rounding) !important;
-	top: 5px;
+	padding-right: var(--userChrome-tab-rounding) !important;
+}
+#TabsToolbar .toolbarbutton-1 {
+	margin: 0 0 !important;
+}
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon {
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+	height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
+}
+
+/* disable if you want to get maximally clean UI, but it might look bad with legacy (Australis or earlier) custom themes 
+#navigator-toolbox {
+	--tabs-border-color: var(--urlbar-box-bgcolor) !important;
+}
+
+/* old-styled control buttons */
+.tab-secondary-label {
+	display: none !important;
+}
+.tab-icon-overlay {
+	opacity: inherit !important;
+}
+.titlebar-button {
+	padding: 6px 17px;
+}
+
+/* close button */
+.tab-close-button {
+	padding: 4px !important;
+	border-radius: 999px !important;
+	width: 21px !important;	height: 21px !important;
+}
+
+/* ctrl buttons (currently located at left, try to change to classic look indafuture) */
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
+	background-color: var(--toolbarbutton-hover-background);
+	border-radius: 1000px !important;
+	margin-top: -2px !important; margin-inline-end: 4.5px !important;
+	padding: 2px !important; padding-top: 4px !important;
+}
+.tab-icon-overlay:not([pinned]) {
+	width: 19px !important;	height: 19px !important;
+	 margin-left: -2px !important;
+}
+
+/* dimmed 1px border */
+#TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+	box-shadow: 0 0 4px rgba(48,48,42,0.6) !important;
+}
+
+/* container lines at the bottom */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	border-radius: 12px 14px 0 0 !important;
+	margin: 32px 4px 0 !important;
 }

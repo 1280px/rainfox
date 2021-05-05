@@ -1,31 +1,34 @@
-/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-toolbarbutton, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #urlbar .searchbar-engine-one-off-item, .urlbarView-row-inner {
-	transition: background-color var(--animation-speed) !important;
-	}
-#identity-box, #urlbar .searchbar-engine-one-off-item, .urlbarView-row-inner {
-	border-radius: var(--menu-corner-rounding) !important;
-  }
+/* general elements rounding and animations */
+#identity-box {
+	border-radius: var(--toolbarbutton-border-radius) !important;
+}
+.searchbar-engine-one-off-item, .urlbarView-row-inner, .downloadButton-row-inner, .downloadButton, .download-state, button {
+	transition: var(--userChrome-animation-speed) !important;
+	border-radius: var(--toolbarbutton-border-radius) !important;
+}
+toolbarbutton, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box {
+	transition: var(--userChrome-animation-speed) !important;
+}
+
+/* fix some of the elements that got broken by previous code */
 #appMenu-zoomReset-button, .protections-popup-tp-switch {
-	border-radius: 10000px !important;
-  }
-.urlbar-icon {
-	width: 28px !important;
-	height: 28px !important;
-	padding: 6px !important;
-	transition: var(--animation-speed) !important;
-	}
-#reader-mode-button {
-	width: 30px !important;
-	height: 28px !important;
-	}
+	border-radius: 1000px !important;
+}
+
+/* make toolbarbuttons smaller */
+toolbar .toolbarbutton-1 {
+	padding: 2px 2px !important;
+}
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+	padding-inline-start: var(--toolbar-start-end-padding) !important;
+}
+#PanelUI-menu-button {
+	padding-inline-end: var(--toolbar-start-end-padding) !important;
+}
+
+/* create a small gap between menu btn and other btns (not sure where to place this piece of code so let it be here) */
 #PanelUI-button {
-	padding-right: 5px !important;
-	padding-left: 5px !important;
-	margin-left: 5px !important;
-	}
-#tabs-newtab-button {
-	margin-left: 1px !important;
-	margin-bottom: 1px !important;
-	padding-bottom: 1px !important;
-	}
+	margin-left: 4px !important;
+}

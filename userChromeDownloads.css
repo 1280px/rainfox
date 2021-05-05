@@ -1,0 +1,30 @@
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+/* buttons icons fix */
+.button-box {
+	padding-block: 3px !important; padding-inline: 5px !important;
+}
+
+/* enlarge your p      rogress bar */
+.downloadContainer {
+	margin-inline-end: -16px !important;
+}
+.downloadBlockedBadgeNew {
+	margin: 0 0 !important;
+}
+
+/* normal download prograss bar */
+.downloadProgress {
+	border: none !important; border-radius: 1000px !important;
+	background-color: var(--button-active-bgcolor) !important;
+	margin: 6px 0 0px !important;
+}
+.downloadProgress::-moz-progress-bar {
+	background-color: var(--toolbarbutton-icon-fill-attention) !important;
+	border: none !important; border-radius: 1000px;
+	margin: 0 0 !important; height: inherit !important;
+}
+
+/* unknown progrss bar 
+curently WIP becuase I couldnt find any file I can download with this type of progress bar for as long as I need 
+(if anyone's intrested, I used elementaryOS 0.6 beta ISO for regular progress bar) */

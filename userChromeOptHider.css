@@ -1,0 +1,40 @@
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+/* remove navigation buttons from context menu */
+#context-navigation, #context-sep-navigation { display: none !important; }
+
+/* remove "Add to Bookmarks" option from context menu */
+#context-bookmarklink { display: none !important; }
+
+/* remove "Save Link as..." option from context menu */
+#context-savelink { display: none !important; }
+
+/* remove "Share" options for tab and images context menus */
+#context_shareTabURL, #context-sendimage { display: none !important; }
+
+/* remove "Reload Tab" (not for multiple tabs!) option from tabs context menu */
+#context_reloadTab { display: none !important; }
+
+/* remove "Move Tab(s)" options from tabs context menu */
+#context_moveTabOptions { display: none !important; }
+
+/* remove "Add Tab(s) to Bookmarks" option from tabs context menu */
+#context_bookmarkTab, #context_bookmarkSelectedTabs { display: none !important; }
+
+/* remove */
+#context-viewinfo, #context-viewpartialsource-selection { display: none !important; }
+
+/* remove "Open in Tabs" option from often used tabs context menu */
+.openintabs-menuitem, .bookmarks-actions-menuseparator { display: none !important; }
+
+/* remove "New Tab" option from app menu panel */
+#appMenu-new-tab-button2 { display: none !important; }
+
+/* unhide "More..." icon in the URLbar right icon block (disabled because there's no any hidden options in it anymore; rest in pepperonis)
+#pageActionButton {	visibility: visible !important; } */
+
+/* remove "Always open in container" icon in the URLbar right icon block */
+#pageAction-urlbar-_testpilot-containers { display: none !important; }
+
+/* unhide "Compact mode (not supported)" in customization icon destiny options even if "browser.compactmode.show" is FALSE */
+#customization-uidensity-menuitem-compact {	display: block !important; }

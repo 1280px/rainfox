@@ -1,14 +1,171 @@
-/* Part of RainFox CSS for Mozilla Firefox | RainFox is originally based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* i'll probably use custom icons in the future since original new look pretty odd ig */
+/* Photon UI icons made by Mozilla and use MPL-2 license. Source: https://design.firefox.com/icons/ */
 
-/* bookmark folder icon */
+/* bookmark-related icons */
 .bookmark-item[container]:not([query]) {
-	list-style-image: url("chrome://browser/skin/folder.svg") !important;
-}
-
-/* bookmark toolbar icon */
+list-style-image: url(".icon/folder.svg") !important; }
 #bookmarksToolbarFolderMenu, #BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {
-	list-style-image: url("chrome://browser/skin/bookmarks-toolbar.svg") !important;
-}
+	list-style-image: url(".icon/bookmarks-toolbar.svg") !important; fill: currentColor; }
+.bookmark-item[container][query] {
+	list-style-image: url(".icon/folder-smart.svg") !important; fill: currentColor; }
+#menu_mobileBookmarks {
+	list-style-image: url(".icon/phone.svg") !important; fill: currentColor; }
 
+/* context menus arrow icons */
+.menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
+	content: url(".icon/menu-arrow.svg") !important; fill: currentColor !important; opacity: 0.6 !important; }
+menuitem[checked="true"] > .menu-iconic-left {
+	list-style-image: url(".icon/menu-check.svg") !important;	fill: currentColor; }
+
+#PlacesChevron, #nav-bar-overflow-button {
+	list-style-image: url(".icon/overflow-chevron.svg") !important; }
+/*.menupopup-arrowscrollbox #scrollbutton-up, .menupopup-arrowscrollbox #scrollbutton-down {
+	list-style-image: url(".icon/menu-dropdown.svg") !important; }*/
+.panel-header > .subviewbutton-back {	list-style-image: url(".icon/panel-back.svg") !important; }
+
+/* downloads panel icons */ 
+.downloadIconShow > .button-box > .button-icon {
+	list-style-image: url(".icon/folder.svg") !important; }
+.downloadIconCancel > .button-box > .button-icon {
+	list-style-image: url(".icon/stop.svg") !important; }
+.downloadIconRetry > .button-box > .button-icon {
+	list-style-image: url(".icon/reload.svg") !important; }
+
+/* tracking protection icon */
+#urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
+	list-style-image: url(".icon/tracking-protection.svg") !important; }
+#urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box[hasException] > #tracking-protection-icon {
+	list-style-image: url(".icon/tracking-protection-off.svg") !important; }
+
+/* security dynamic icon */
+#identity-icon {
+	list-style-image: url(".icon/urlbar-info.svg") !important; }
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon, #identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
+	list-style-image: url(".icon/urlbar-s-secure.svg") !important; }
+#identity-box[pageproxystate="valid"].weakCipher #identity-icon, #identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon, #identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon, #identity-box[pageproxystate="valid"].certUserOverridden #identity-icon, #identity-box[pageproxystate="valid"].certErrorPage #identity-icon {
+	list-style-image: url(".icon/urlbar-s-weak.svg") !important; fill: currentColor !important; fill-opacity: 1 !important; }
+#identity-box[pageproxystate="valid"].notSecure #identity-icon, #identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon, #identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
+	list-style-image: url(".icon/urlbar-s-insecure.svg") !important; }
+#identity-box[pageproxystate="valid"].chromeUI #identity-icon {
+	list-style-image: url(".icon/firefox.svg") !important; }
+#identity-box[pageproxystate="valid"].localResource #identity-icon {
+	list-style-image: url(".icon/urlbar-file.svg") !important; }
+#urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon {
+	list-style-image: url(".icon/urlbar-search.svg") !important; }
+
+/* permission icons */
+#permissions-granted-icon {
+	list-style-image: url(".icon/permissions.svg") !important; }
+.popup-notification-icon[popupid="web-notifications"], .desktop-notification-icon {
+	list-style-image: url(".icon/urlbar-notification.svg") !important; }
+.desktop-notification-icon.blocked-permission-icon {
+	list-style-image: url(".icon/urlbar-notification-off.svg") !important; }
+.autoplay-media-icon {
+	list-style-image: url(".icon/urlbar-autoplay.svg") !important; }
+.autoplay-media-icon.blocked-permission-icon {
+	list-style-image: url(".icon/urlbar-autoplay-off.svg") !important; }
+
+
+
+/* general simple icons */
+#back-button, .unified-nav-back[_moz-menuactive] {
+	list-style-image: url(".icon/back.svg") !important; }
+#forward-button, #urlbar-go-button, .search-go-button, .unified-nav-forward[_moz-menuactive] {
+	list-style-image: url(".icon/forward.svg") !important; }
+#home-button {
+	list-style-image: url(".icon/home.svg") !important; }
+#library-button {
+	list-style-image: url(".icon/library.svg") !important; }
+#history-panelmenu, #urlbar-engine-one-off-item-history {
+	list-style-image: url(".icon/history.svg") !important; }
+#find-button {
+	list-style-image: url(".icon/find.svg") !important; }
+#sidebar-button {
+	list-style-image: url(".icon/sidebar-toggle.svg") !important; }
+#sync-button, #urlbar-engine-one-off-item-tabs {
+	list-style-image: url(".icon/tab.svg") !important; }
+#bookmarks-menu-button {
+	list-style-image: url(".icon/bookmarks-tray.svg") !important; }
+#add-ons-button, #identity-box[pageproxystate="valid"].extensionPage #identity-icon {
+	list-style-image: url(".icon/addon.svg") !important; }
+#preferences-button, .search-setting-button-compact  .button-box  .button-icon {
+	list-style-image: url(".icon/settings.svg") !important; }
+#tabs-newtab-button, #TabsToolbar #new-tab-button {
+	list-style-image: url(".icon/newtab.svg") !important; }
+#reader-mode-button {
+	list-style-image: url(".icon/reader-mode.svg") !important; }
+#pageAction-panel-bookmark, #star-button {
+	list-style-image: url(".icon/bookmark-hollow.svg") !important; }
+#pageAction-panel-bookmark[starred], #star-button[starred] {
+	list-style-image: url(".icon/bookmark.svg") !important; }
+#print-button {
+	list-style-image: url(".icon/print.svg") !important; }
+#import-button {
+	list-style-image: url(".icon/import.svg") !important; }
+#new-window-button {
+	list-style-image: url(".icon/new-window.svg") !important; }
+#zoom-out-button, #appMenu-zoomReduce-button2 {
+	list-style-image: url(".icon/zoom-out.svg") !important; }
+#zoom-in-button, #appMenu-zoomEnlarge-button2 {
+	list-style-image: url(".icon/zoom-in.svg") !important; }
+#fullscreen-button, #appMenu-fullscreen-button2 {
+	list-style-image: url(".icon/fullscreen.svg") !important; }
+#fullscreen-button[checked], #appMenu-fullscreen-button2[checked] {
+	list-style-image: url(".icon/fullscreen-exit.svg") !important; }
+.syncNowBtn {
+	list-style-image: url(".icon/sync.svg") !important; }
+#alltabs-button {
+	list-style-image: url(".icon/panel-back.svg") !important; transform: rotate(-90deg); }
+#pageActionButton, .share-more-button {
+	list-style-image: url(".icon/more.svg") !important; }
+#save-to-pocket-button {
+	list-style-image: url(".icon/pocket.svg") !important; }
+
+/* refresh button -- animations are currently broken and i dont know how to fix it */
+#stop-reload-button[animate] > #reload-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+	background-image: url(".icon/reload-to-stop.svg") !important;	width: 468px !important; height: 20px !important; }
+#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  background-image: url(".icon/stop-to-reload.svg") !important;	width: 468px !important; height: 20px !important; }
+#stop-reload-button[animate] > #reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  animation-name: c-reload-to-stop !important; 
+  transition: none !important; }
+#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  animation-name: c-stop-to-reload !important;
+	transition: none !important; }
+@keyframes c-reload-to-stop {
+  from { transform: translateX(0); }
+  to { transform: translateX(-450px) } }
+@keyframes c-stop-to-reload {
+  from { transform: translateX(0); }
+  to { transform: translateX(-450px) } }
+#reload-button {
+	list-style-image: url(".icon/reload.svg") !important; }
+#stop-button {
+	list-style-image: url(".icon/stop.svg") !important; }
+
+/* menu button */
+#PanelUI-menu-button {
+	list-style-image: url(".icon/menu.svg") !important; }
+#PanelUI-menu-button[badge-status="update-available"], #PanelUI-menu-button[badge-status="update-downloading"], #PanelUI-menu-button[badge-status="update-manual"], #PanelUI-menu-button[badge-status="update-other-instance"], #PanelUI-menu-button[badge-status="update-restart"] {
+	list-style-image: url(".icon/menu-badged.svg") !important; }
+#PanelUI-menu-button[badge-status="update-available"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-downloading"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-manual"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-other-instance"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-restart"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, .panel-banner-item[notificationid="update-available"] > .toolbarbutton-icon, .panel-banner-item[notificationid="update-downloading"] > .toolbarbutton-icon, .panel-banner-item[notificationid="update-manual"] > .toolbarbutton-icon, .panel-banner-item[notificationid="update-other-instance"] > .toolbarbutton-icon, .panel-banner-item[notificationid="update-restart"] > .toolbarbutton-icon {
+	background: #74BF43 url(".icon/menu-update-badge.svg") no-repeat center !important; background-size: 10px !important; border-radius: 1000px !important; }
+
+/* downloads button (currently doesn't replace Photon UI animation, and I have no idea how to implement Proton UI's one back) */
+#downloads-indicator-anchor {
+	list-style-image: url(".icon/download.svg#arrow-with-bar") !important; }
+#downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {	top: calc(50% - 10px); left: calc(50% - 10px);	width: 20px; height: 20px; }
+#downloads-indicator-progress-inner {	width: 16px; height: 16px; }
+
+/* tab action icons */
+.tab-icon-overlay[soundplaying] {
+	list-style-image: url(".icon/tab-audio.svg") !important; }
+.tab-icon-overlay[muted] {
+	list-style-image: url(".icon/tab-audio-off.svg") !important; }
+.close-icon {
+	list-style-image: url(".icon/tab-close.svg") !important; }
+
+/* modal and system dialog icons */
+.dialog-close .close-icon > .button-icon {
+	list-style-image: url(".icon/stop.svg") !important; }

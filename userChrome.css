@@ -1,15 +1,15 @@
- /*  /   /  //   /    /  /     /  /    /   /       /   
-/______   / / __    /   _____    /  ___  ___  /   /   /
-|      \.--.-(ЖЖ)-----./  __/       \  \/  / /       / 
-|      /     |  |  .  |   _|         /    /    v0.3a   
-|__|\__\___._|__|__|__|__|          /__/\__\          /
-
+/*   /   /  //   /    /  /     /  /    /   /       /   
+/______   / / __    /   _____ .. /. ___  ___  /   /   /
+|      \.--.-(ЖЖ)-----./  __/ ЖЖЖЖЖ \  \/  / / /     / 
+|      /     |  |  .  |   _| ЖЖЖЖЖЖЖ /    /    v0.4    
+|__|\__\___._|__|__|__|__|      J   /__/\__\      /   /
+Check info and updates at github.com/1280px/rainfox uwu
 
 To disable/enable some part of the style, add/remove "/* " before its @import. Example:
 
-@import "exampleStyleNameSorryIHaveNoImagination.css"                [ ENABLED ]
+@import "userChromeReplaceEverythingWithPizza.css"                [ ENABLED ]
 
-/* @import "exampleStyleNameSorryIHaveNoImagination.css"             [ DISABLED ]
+/* @import "userChromeReplaceEverythingWithPizza.css"             [ DISABLED ]
 
 
 
@@ -22,45 +22,52 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 
+/* ### ###  Elem animations & rounding  ### ### */
+@import "userChromeAnimations.css";
+
+
+/* ### ###    PhotonUI icons (.icon)    ### ### */
+@import "userChromeIcons.css";
+
+
+/* ### ###   Hide Bloaty/Useless Opts   ### ### */
+@import "userChromeOptHider.css";
+
+
+
+
+
 /* ###  Centered Autohide Bookmark Toolbar  ### */
 @import "userChromeBookmarks.css";
 
 
-/* ### ###    Adaptive Context Menus    ### ### */
+/* ### ###   Context Menus and Panels   ### ### */
 @import "userChromeContextMenus.css";
 
 
-/* ### ###      Small Rounded Tabs      ### ### */
-@import "userChromeTabs.css";
-
-
-/* ### ###   Animated Toolbar Buttons   ### ### */
-@import "userChromeAnimations.css";
-
-
-/* ### ###  Menubar Animation & Shadow  ### ### */
-@import "userChromeMenubar.css";
-
-
-/* ### ###     Small URLbar Changes     ### ### */
-@import "userChromeURLbar.css";
-
-
-/* WIP WIP     Legacy Icons Updater     WIP WIP */
-@import "userChromeIcons.css";
+/* ### ###   Adaptive Downloads Panel   ### ### */
+@import "userChromeDownloads.css";
 
 
 /* ###   Hourglass Tabs Loading Animation   ### */
 @import "userChromeHourglassTabLoad.css";
 
 
-/* WIP   Adaptive Pop-ups & Notifications   WIP */
-@import "userChromePopups.css";
+/* ### ###  Menubar Animation & Shadow  ### ### */
+@import "userChromeMenubar.css";
+
+
+/* ### ###   Navigation Btns Features   ### ### */
+@import "userChromeNavButtons.css";
 
 
 /* ### ##  Adaptive 'Customize...' Page  ## ### */
 @import "userChromePageCustomize.css";
 
 
+/* ### ###   Photon-like Rounded Tabs   ### ### */
+@import "userChromeTabs.css";
 
 
+/* ### ###     Small URLbar Changes     ### ### */
+@import "userChromeURLbar.css";
