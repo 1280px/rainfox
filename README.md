@@ -7,7 +7,7 @@ Started as a remix of MaterialFox and QuietFox, the main task of this userChrome
 The current philosophy of this uC is to save Proton's clarity and simplicity while re-implementing nice Photon's icons, elements and general look & feel
 
 <h1 align=center>/ //　/ / 　/　/　　Features　　/　//　/ / /　/</h1>
-<h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]<b> means "disabled by default"</h3>
+<h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
   
 <pre>Pre-proton rounded tabs without lines
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img4.png" align=center></img></pre>
@@ -17,9 +17,9 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img1.png" align=center></img></pre>
 <pre>Animated auto-hide "Forward" button
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img5.png" align=center></img></pre>
-<pre>[X] Hourglass tab loading animation
+<pre><b>[X]</b> Hourglass tab loading animation
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img3.png" align=center></img></pre>
-<pre>[X] Paranoia mode (unselected tabs are hidden until you hover it)
+<pre><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img6.png" align=center></img></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
@@ -31,7 +31,7 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <li><code>svg.context-properties.content.enabled == TRUE</code> <i>(allows custom SVGs use context colors)</i>
 <li><code>security.secure_connection_icon_color_gray == FALSE</code> <i>(recommended; uses green color for secure connection icons)</i>
 </ul>
-<b>Style was tested on Firefox 90.0a1 @ Windows 10 (100% scaling).<br>I'll appreciate your feedback from other configs (especially from macOS and Linux!)</b>
+<b>Style was tested on Firefox 90.0a1 @ Windows 10 (100% scaling).<br>I'll appreciate your feedback from other configs! (especially from macOS and Linux)</b>
 
 
 <h1 align=center>/ 　// /　/　/ /　　Known Issues　　/　 / /　 / ///</h1><ol>
