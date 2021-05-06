@@ -9,17 +9,17 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <h1 align=center>/ //　/ / 　/　/　　Features　　/　//　/ / /　/</h1>
 <h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]<b> means "disabled by default"</h3>
   
-<pre>Pre-proton rounded tabs without lines</b>
+<pre>Pre-proton rounded tabs without lines
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img4.png" align=center></img></pre>
-<pre>Photon-ish context menus and panels!</b>
+<pre>Photon-ish context menus and panels!
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img2.png" align=center></img></pre>
-<pre><b>Animated auto-hide bookmarks panel</b>
+<pre>Animated auto-hide bookmarks panel
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img1.png" align=center></img></pre>
-<pre>Animated auto-hide "Forward" button</b>
+<pre>Animated auto-hide "Forward" button
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img5.png" align=center></img></pre>
-<pre>[X] Hourglass tab loading animation</b>
+<pre>[X] Hourglass tab loading animation
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img3.png" align=center></img></pre>
-<pre>[X] Paranoia mode (unselected tabs are hidden until you hover it)</b>
+<pre>[X] Paranoia mode (unselected tabs are hidden until you hover it)
 <img src="https://github.com/1280px/rainfox/blob/master/readme-img6.png" align=center></img></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
