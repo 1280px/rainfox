@@ -50,7 +50,7 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 /* ###   Hourglass Tabs Loading Animation   ### */
-@import "userChromeHourglassTabLoad.css";
+/* @import "userChromeHourglassTabLoad.css";
 
 
 /* ### ###  Menubar Animation & Shadow  ### ### */
@@ -63,6 +63,10 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 /* ### ##  Adaptive 'Customize...' Page  ## ### */
 @import "userChromePageCustomize.css";
+
+
+/* ###   Hourglass Tabs Loading Animation   ### */
+/* @import "userChromeParanoia.css";
 
 
 /* ### ###   Photon-like Rounded Tabs   ### ### */

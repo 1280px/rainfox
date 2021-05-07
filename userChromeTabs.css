@@ -40,6 +40,11 @@ tab[beforehovered]::after, tab:hover::after {
 	margin-top: 20px !important;
 }
 
+/* gap between pinned and regular tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+	margin-inline-start: 6px !important;
+}
+
 /* tabbar zone improvements */
 #navigator-toolbox {
 	--tabs-border-color: #4442 !important;
@@ -57,7 +62,7 @@ tab[beforehovered]::after, tab:hover::after {
 #TabsToolbar .toolbarbutton-1 {
 	margin: 0 0 !important;
 }
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon {
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #alltabs-button .toolbarbutton-badge-stack {
 	width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
 	height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
 	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
@@ -66,6 +71,11 @@ tab[beforehovered]::after, tab:hover::after {
 /* disable if you want to get maximally clean UI, but it might look bad with legacy (Australis or earlier) custom themes 
 #navigator-toolbox {
 	--tabs-border-color: var(--urlbar-box-bgcolor) !important;
+}
+
+/* overflow buttons */
+#scrollbutton-up, #scrollbutton-down {
+	padding: calc(var(--toolbarbutton-inner-padding) - 4px) calc(var(--toolbarbutton-inner-padding) - 8px) !important;
 }
 
 /* old-styled control buttons */
@@ -88,10 +98,10 @@ tab[beforehovered]::after, tab:hover::after {
 
 /* ctrl buttons (currently located at left, try to change to classic look indafuture) */
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
-	background-color: var(--toolbarbutton-hover-background);
+	background-color: #9995;
 	border-radius: 1000px !important;
-	margin-top: -2px !important; margin-inline-end: 4.5px !important;
-	padding: 2px !important; padding-top: 4px !important;
+	margin-top: -1px !important; margin-bottom: -1px !important; margin-inline-end: 4.5px !important;
+	padding: 3px !important; 
 }
 .tab-icon-overlay:not([pinned]) {
 	width: 19px !important;	height: 19px !important;
