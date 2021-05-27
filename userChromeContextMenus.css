@@ -1,6 +1,6 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* hide system context menus (probably obsolete for now, reinvestigate and clean indafuture) */
+/* hide system context menus (probably obsolete now, reinvestigate and clean indafuture) */
 menu, menuitem, menucaption, .autocomplete-richlistbox, .autocomplete-richlistitem {
 	-moz-appearance: none !important;
 }
@@ -87,11 +87,10 @@ menu[disabled="true"], menuitem[disabled="true"], menucaption[disabled="true"], 
 	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
 	opacity: 50%;
 }
-menu:active:not([disabled="true"]), menuitem:active:not([disabled="true"]), menucaption:active:not([disabled="true"]) {
+menu:active:not([disabled="true"]), menuitem:active:not([disabled="true"]), menucaption:active:not([disabled="true"]), #allTabsMenu-allTabsViewTabs > .all-tabs-item:hover:active {
 	background-color: var(--panelview-toolbarbutton-active-bgcolor) !important;
 	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
 }
-
 
 /* menu separator */
 menupopup menuseparator {
@@ -103,10 +102,11 @@ menupopup menuseparator {
 
 /* menu arrows */
 .menu-right {
-	appearance: auto !important; -moz-appearance: menuarrow !important;
 	opacity: 0.6;
 	float: inline-end;
-	margin: 0px !important;	margin-right: 2px !important;
+	/*! margin: 0px !important; */	margin-right: 8px !important;
+	padding: 2px;
+	margin-top: 2px !important;
 }
 #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
 	fill-opacity: 1.0 !important;
@@ -123,37 +123,49 @@ menupopup menuseparator {
 
 /* proton panels general handler */
 .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
-	margin: 0 0 !important; padding: 0px 12px !important;
+	margin: 0 0 !important; padding: 0px 12px 0px 10px !important;
 	height: 24px;
 	border-radius: 0px !important;
 	background-color: transparent;
 	fill-opacity: 0.2 !important;
 }
-.addon-banner-item, .panel-banner-item {
+.panel-subview-body > toolbarbutton > .toolbarbutton-icon {
+	margin-right: 6px !important;
+}
+.addon-banner-item, .panel-banner-item, #appMenu-fxa-status2:not([fxastatus="signedin"]) {
 	margin: 0px 8px 4px !important;
 }
 
 /* back button (proton panels) */
 .panel-header > .subviewbutton-back {
-	border-radius: 1000px !important;
+	border-radius: 1280px !important;
 	padding: 4px 4px !important;
 	margin: 0 0 !important;
 	margin-left: 4px !important;
 }
 
-/* account controls in proton panel */
+/* account controls (proton menu panel) */
 #fxa-menu-avatar {
 	display: block !important;
-	margin-bottom: -12px;	margin-right: 12px;
+	margin-right: 12px;
 }
 #fxa-manage-account-button {
-	margin-bottom: 18px !important;
+	height: 44px !important;
 }
 #appMenu-fxa-status2 {
 	padding: 0 !important;
 }
+.syncnow-label {
+	margin-left: 6px !important;
+}
+.pageAction-sendToDevice-device .toolbarbutton-text {
+	padding-top: 3px !important;
+}
+.pageAction-sendToDevice-device .toolbarbutton-icon {
+	margin-top: 3px !important;
+}
 
-/* zoom buttons in proton panel */
+/* zoom buttons (proton menu panel) */
 #appMenu-zoomReduce-button2, #appMenu-zoomReset-button2, #appMenu-zoomEnlarge-button2, #appMenu-fullscreen-button2 {
 	padding: 0px 4px !important;
 }
@@ -167,8 +179,27 @@ menupopup menuseparator {
 toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
 	margin: 0px !important;
 }
+#appMenu-fullscreen-button2 > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2 > .toolbarbutton-icon, #appMenu-zoomReduce-button2 > .toolbarbutton-icon {
+	background-color: var(--zoom-controls-bgcolor, var(--button-bgcolor, ButtonFace));
+}
+#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-text, #appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, #appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon {
+	background-color: var(--button-hover-bgcolor) !important;
+}
+#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-text, #appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, #appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon {
+	background-color: var(--button-active-bgcolor) !important;
+}
 
-/* show compact mode in customization options even if "browser.compactmode.show" set to FALSE */
+/* all tab view (not really proton but more proton than not) */
+#allTabsMenu-allTabsViewTabs > .all-tabs-item {
+	margin-inline: 0px !important;
+	border-radius: 0px !important;
+}
+#allTabsMenu-allTabsViewTabs > .all-tabs-item[selected] {
+	background-color: color-mix(in srgb, var(--panelview-toolbarbutton-active-bgcolor) 30%, #fff0) !important;
+	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
+}
+
+/* show compact mode in customization options even if "browser.compactmode.show" set to FALSE (becuase fck that guy who decided to hide it by default) */
 #customization-uidensity-menuitem-compact {
 	display: block !important;
 }

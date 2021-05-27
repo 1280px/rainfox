@@ -1,34 +1,14 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* general elements rounding and animations */
-#identity-box {
+/* general elements rounding and animations (warning - tons of unsorted classeas and ids) */
+/* one day i'll sort this mess, i swear! one day... */
+#identity-box, #appMenu-fxa-status2:not([fxastatus="signedin"]) #appMenu-fxa-label2 {
 	border-radius: var(--toolbarbutton-border-radius) !important;
 }
 .searchbar-engine-one-off-item, .urlbarView-row-inner, .downloadButton-row-inner, .downloadButton, .download-state, button {
 	transition: var(--userChrome-animation-speed) !important;
 	border-radius: var(--toolbarbutton-border-radius) !important;
 }
-toolbarbutton, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box {
+toolbarbutton, .tab-close-button, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box, #appMenu-zoomReset-button2 .toolbarbutton-text, #urlbar-zoom-button, .urlbarView-action, .urlbar-addon-page-action, toolbarpaletteitem, .tab-icon-overlay, #allTabsMenu-allTabsViewTabs > .all-tabs-item {
 	transition: var(--userChrome-animation-speed) !important;
-}
-
-/* fix some of the elements that got broken by previous code */
-#appMenu-zoomReset-button, .protections-popup-tp-switch {
-	border-radius: 1000px !important;
-}
-
-/* make toolbarbuttons smaller */
-toolbar .toolbarbutton-1 {
-	padding: 2px 2px !important;
-}
-#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
-	padding-inline-start: var(--toolbar-start-end-padding) !important;
-}
-#PanelUI-menu-button {
-	padding-inline-end: var(--toolbar-start-end-padding) !important;
-}
-
-/* create a small gap between menu btn and other btns (not sure where to place this piece of code so let it be here) */
-#PanelUI-button {
-	margin-left: 4px !important;
 }

@@ -1,36 +1,16 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* Photon UI icons made by Mozilla and use MPL-2 license. Source: https://design.firefox.com/icons/ */
+/* Photon UI icons made by Mozilla and available under MPL-2 license. Source: https://design.firefox.com/icons/ */
 
-/* bookmark-related icons */
-.bookmark-item[container]:not([query]) {
-list-style-image: url(".icon/folder.svg") !important; }
-#bookmarksToolbarFolderMenu, #BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {
-	list-style-image: url(".icon/bookmarks-toolbar.svg") !important; fill: currentColor; }
-.bookmark-item[container][query] {
-	list-style-image: url(".icon/folder-smart.svg") !important; fill: currentColor; }
-#menu_mobileBookmarks {
-	list-style-image: url(".icon/phone.svg") !important; fill: currentColor; }
-
-/* context menus arrow icons */
+/* context menus arrows */
 .menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
-	content: url(".icon/menu-arrow.svg") !important; fill: currentColor !important; opacity: 0.6 !important; }
+	content: url(".icon/menu-arrow.svg") !important; fill: currentColor !important; opacity: 0.6 !important; 
+	-moz-context-properties: fill !important; }
 menuitem[checked="true"] > .menu-iconic-left {
 	list-style-image: url(".icon/menu-check.svg") !important;	fill: currentColor; }
-
 #PlacesChevron, #nav-bar-overflow-button {
 	list-style-image: url(".icon/overflow-chevron.svg") !important; }
-/*.menupopup-arrowscrollbox #scrollbutton-up, .menupopup-arrowscrollbox #scrollbutton-down {
-	list-style-image: url(".icon/menu-dropdown.svg") !important; }*/
 .panel-header > .subviewbutton-back {	list-style-image: url(".icon/panel-back.svg") !important; }
-
-/* downloads panel icons */ 
-.downloadIconShow > .button-box > .button-icon {
-	list-style-image: url(".icon/folder.svg") !important; }
-.downloadIconCancel > .button-box > .button-icon {
-	list-style-image: url(".icon/stop.svg") !important; }
-.downloadIconRetry > .button-box > .button-icon {
-	list-style-image: url(".icon/reload.svg") !important; }
 
 /* tracking protection icon */
 #urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
@@ -57,18 +37,82 @@ menuitem[checked="true"] > .menu-iconic-left {
 /* permission icons */
 #permissions-granted-icon {
 	list-style-image: url(".icon/permissions.svg") !important; }
-.popup-notification-icon[popupid="web-notifications"], .desktop-notification-icon {
-	list-style-image: url(".icon/urlbar-notification.svg") !important; }
+.geo-icon {
+	list-style-image: url(".icon/geo.svg") !important; }
+.geo-icon.blocked-permission-icon {
+	list-style-image: url(".icon/geo-off.svg") !important; }
+.xr-icon {
+	list-style-image: url(".icon/vr.svg") !important; }
+.xr-icon.blocked-permission-icon {
+	list-style-image: url(".icon/vr.svg") !important; opacity: 33%; }  /* vr-off icon doesn't exist, so just add some transparency to a regular icon */
+.camera-icon {
+	list-style-image: url(".icon/camera.svg") !important; }
+.camera-icon.blocked-permission-icon {
+	list-style-image: url(".icon/camera-off.svg") !important; }
+.microphone-icon {
+	list-style-image: url(".icon/microphone.svg") !important; }
+.microphone-icon.blocked-permission-icon {
+	list-style-image: url(".icon/microphone-off.svg") !important; }
+.screen-icon {
+	list-style-image: url(".icon/screen.svg") !important; }
+.screen-icon.blocked-permission-icon {
+	list-style-image: url(".icon/screen-off.svg") !important; }
+.persistent-storage-icon {
+	list-style-image: url(".icon/storage.svg") !important; }
+.persistent-storage-icon.blocked-permission-icon {
+	list-style-image: url(".icon/storage-off.svg") !important; }
+.desktop-notification-icon, .popup-notification-icon[popupid="web-notifications"] {
+	list-style-image: url(".icon/notifications.svg") !important; }
 .desktop-notification-icon.blocked-permission-icon {
-	list-style-image: url(".icon/urlbar-notification-off.svg") !important; }
+	list-style-image: url(".icon/notifications-off.svg") !important; }
+.popup-icon {
+	list-style-image: url(".icon/popup.svg") !important; }
+.popup-icon.blocked-permission-icon {
+	list-style-image: url(".icon/popup-off.svg") !important; }
+#blocked-permissions-container > .popup-icon { transform: translateY(0px) !important; } /* fix weird Y-shift used by ProtonUI popup icons */
 .autoplay-media-icon {
-	list-style-image: url(".icon/urlbar-autoplay.svg") !important; }
+	list-style-image: url(".icon/autoplay.svg") !important; }
 .autoplay-media-icon.blocked-permission-icon {
-	list-style-image: url(".icon/urlbar-autoplay-off.svg") !important; }
+	list-style-image: url(".icon/autoplay-off.svg") !important; }
+.autoplay-media-icon {
+	list-style-image: url(".icon/autoplay.svg") !important; }
+.autoplay-media-icon.blocked-permission-icon {
+	list-style-image: url(".icon/autoplay-off.svg") !important; }
+.canvas-icon {
+	list-style-image: url(".icon/canvas.svg") !important; }
+.canvas-icon.blocked-permission-icon {
+	list-style-image: url(".icon/canvas-off.svg") !important; }
+.midi-icon {
+	list-style-image: url(".icon/midi.svg") !important; }
+.midi-icon.blocked-permission-icon {
+	list-style-image: url(".icon/midi.svg") !important; opacity: 33%; } /* midi-off icon doesn't exist, so just add some transparency to a regular icon */
+.install-icon {
+	list-style-image: url(".icon/addon.svg") !important; }
+.install-icon.blocked-permission-icon {
+	list-style-image: url(".icon/addon.svg") !important; opacity: 33%; } /* addon-off icon doesn't exist, so just add some transparency to a regular icon */
 
+/* notificationbox icons (not inherited from permission icons only) */
+#default-notification-icon, #servicesInstall-notification-icon {
+	list-style-image: url(".icon/error.svg") !important; transform: rotate(180deg) !important; } /* lack of Photon icons sometimes makes you improvise like this :p */
+#canvas-notification-icon {
+	list-style-image: url(".icon/canvas.svg") !important; }
+#indexedDB-notification-icon {
+	list-style-image: url(".icon/storage2.svg") !important; }
+#password-notification-icon {
+	list-style-image: url(".icon/password2.svg") !important; }
+#plugins-notification-icon > .plugin-icon {
+	list-style-image: url(".icon/plugin.svg") !important; }
+#persistent-storage-notification-icon {
+	width: 28px !important; }
+#webauthn-notification-icon {
+	list-style-image: url(".icon/fingerprint.svg") !important; }
 
+/* border value for userChromeNavButtons.css; overwrites default value (1px) if Photon icons are enabled */
+#back-button .toolbarbutton-icon {
+	box-shadow: 0px 0px 0px 1.92px color-mix(in srgb, currentColor 40%, #fff0) !important; /* uses 1.92px instead of 2px prevent "overdrawn" circle that appears sometimes for no reason */
+}
 
-/* general simple icons */
+/* general simple icons (mostly actionbar buttons) */
 #back-button, .unified-nav-back[_moz-menuactive] {
 	list-style-image: url(".icon/back.svg") !important; }
 #forward-button, #urlbar-go-button, .search-go-button, .unified-nav-forward[_moz-menuactive] {
@@ -93,7 +137,7 @@ menuitem[checked="true"] > .menu-iconic-left {
 	list-style-image: url(".icon/settings.svg") !important; }
 #tabs-newtab-button, #TabsToolbar #new-tab-button {
 	list-style-image: url(".icon/newtab.svg") !important; }
-#reader-mode-button {
+#reader-mode-button, #reader-mode-button > .urlbar-icon {
 	list-style-image: url(".icon/reader-mode.svg") !important; }
 #pageAction-panel-bookmark, #star-button {
 	list-style-image: url(".icon/bookmark-hollow.svg") !important; }
@@ -105,40 +149,33 @@ menuitem[checked="true"] > .menu-iconic-left {
 	list-style-image: url(".icon/import.svg") !important; }
 #new-window-button {
 	list-style-image: url(".icon/new-window.svg") !important; }
-#zoom-out-button, #appMenu-zoomReduce-button2 {
-	list-style-image: url(".icon/zoom-out.svg") !important; }
-#zoom-in-button, #appMenu-zoomEnlarge-button2 {
-	list-style-image: url(".icon/zoom-in.svg") !important; }
-#fullscreen-button, #appMenu-fullscreen-button2 {
-	list-style-image: url(".icon/fullscreen.svg") !important; }
-#fullscreen-button[checked], #appMenu-fullscreen-button2[checked] {
-	list-style-image: url(".icon/fullscreen-exit.svg") !important; }
-.syncNowBtn {
-	list-style-image: url(".icon/sync.svg") !important; }
 #alltabs-button {
 	list-style-image: url(".icon/panel-back.svg") !important; transform: rotate(-90deg); }
 #pageActionButton, .share-more-button {
 	list-style-image: url(".icon/more.svg") !important; }
 #save-to-pocket-button {
 	list-style-image: url(".icon/pocket.svg") !important; }
+#privatebrowsing-button {
+	list-style-image: url(".icon/private.svg") !important; }
+}
 
-/* refresh button -- animations are currently broken and i dont know how to fix it */
+/* refresh button -- one of the animations is competely broken and idk how to fix it :( */
 #stop-reload-button[animate] > #reload-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
 	background-image: url(".icon/reload-to-stop.svg") !important;	width: 468px !important; height: 20px !important; }
-#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
-  background-image: url(".icon/stop-to-reload.svg") !important;	width: 468px !important; height: 20px !important; }
+#stop-reload-button[animate] > #reload-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  width: 468px !important; height: 20px !important; background-image: url(".icon/reload-to-stop.svg") !important;
+}
 #stop-reload-button[animate] > #reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
-  animation-name: c-reload-to-stop !important; 
+  animation-name: userChrome-reload-to-stop !important; 
   transition: none !important; }
-#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
-  animation-name: c-stop-to-reload !important;
-	transition: none !important; }
-@keyframes c-reload-to-stop {
+#reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+	animation-timing-function: steps(25) !important;
+	animation-duration: 0.3s !important;
+}
+@keyframes userChrome-reload-to-stop {
   from { transform: translateX(0); }
-  to { transform: translateX(-450px) } }
-@keyframes c-stop-to-reload {
-  from { transform: translateX(0); }
-  to { transform: translateX(-450px) } }
+  to { transform: translateX(-450px) } 
+}
 #reload-button {
 	list-style-image: url(".icon/reload.svg") !important; }
 #stop-button {
@@ -153,20 +190,86 @@ menuitem[checked="true"] > .menu-iconic-left {
 	background: #74BF43 url(".icon/menu-update-badge.svg") no-repeat center !important; background-size: 10px !important; border-radius: 1000px !important; }
 #PanelUI-menu-button[badge-status="update-available"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-downloading"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-manual"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-other-instance"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-restart"] > .toolbarbutton-badge-stack > .toolbarbutton-badge, #PanelUI-menu-button[badge-status="update-unsupported"] > .toolbarbutton-badge-stack > .toolbarbutton-badge {
 	margin: -7px 0 0 !important; margin-inline-end: -4px !important; }
+#appMenu-proton-update-banner > .toolbarbutton-icon {	margin: 0px !important; }
 
 /* downloads button (currently doesn't replace Photon UI animation, and I have no idea how to implement Proton UI's one back) */
 #downloads-indicator-anchor {
 	list-style-image: url(".icon/download.svg#arrow-with-bar") !important; }
-#downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {	top: calc(50% - 10px); left: calc(50% - 10px);	width: 20px; height: 20px; }
+#downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {	top: calc(50% - 10px); left: calc(50% - 10px);	width: 20px; height: 20px; border-width: 2px !important; }
 #downloads-indicator-progress-inner {	width: 16px; height: 16px; }
 
 /* tab action icons */
-.tab-icon-overlay[soundplaying] {
+.tab-icon-overlay[soundplaying], .all-tabs-secondary-button[soundplaying] {
 	list-style-image: url(".icon/tab-audio.svg") !important; }
-.tab-icon-overlay[muted] {
+.tab-icon-overlay[muted], .all-tabs-secondary-button[muted] {
 	list-style-image: url(".icon/tab-audio-off.svg") !important; }
 .close-icon {
 	list-style-image: url(".icon/tab-close.svg") !important; }
+
+/* bookmark-related icons */
+.bookmark-item[container]:not([query]) {
+list-style-image: url(".icon/folder.svg") !important; }
+#bookmarksToolbarFolderMenu, #BMB_bookmarksToolbar, #panelMenu_bookmarksToolbar {
+	list-style-image: url(".icon/bookmarks-toolbar.svg") !important; fill: currentColor; }
+.bookmark-item[container][query] {
+	list-style-image: url(".icon/folder-smart.svg") !important; fill: currentColor; }
+#menu_mobileBookmarks {
+	list-style-image: url(".icon/phone.svg") !important; fill: currentColor; }
+
+/* downloads panel icons */ 
+.downloadIconShow > .button-box > .button-icon {
+	list-style-image: url(".icon/folder.svg") !important; }
+.downloadIconCancel > .button-box > .button-icon {
+	list-style-image: url(".icon/stop.svg") !important; }
+.downloadIconRetry > .button-box > .button-icon {
+	list-style-image: url(".icon/reload.svg") !important; }
+
+/* appmenu panel (separated from general icons for code clarity) */
+#appMenu-new-window-button2 .toolbarbutton-icon {
+	list-style-image: url(".icon/new-window.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-new-private-window-button2 {
+	list-style-image: url(".icon/private.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-bookmarks-button {
+	list-style-image: url(".icon/bookmark-hollow.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-history-button {
+	list-style-image: url(".icon/history.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-downloads-button {
+	list-style-image: url(".icon/download.svg#arrow-with-bar") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-passwords-button {
+	list-style-image: url(".icon/password2.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-extensions-themes-button {
+	list-style-image: url(".icon/addon.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-print-button2 {
+	list-style-image: url(".icon/print.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-save-file-button2 {
+	list-style-image: url(".icon/save.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-find-button2 {
+	list-style-image: url(".icon/find.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-settings-button {
+	list-style-image: url(".icon/settings.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-more-button2 {
+	list-style-image: url(".icon/null.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-help-button2 {
+	list-style-image: url(".icon/help.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+#appMenu-help-button2 .toolbarbutton-icon {	height: 1.7rem !important;	margin-left: -2px !important; margin-right: 4px !important; } /* required because of bad help icon size */
+#appMenu-quit-button2  {
+	list-style-image: url(".icon/quit.svg") !important; -moz-context-properties: fill; fill: currentColor; }
+
+/* appmenu panel zoom */
+#appMenu-zoom-controls2 .toolbarbutton-text { padding-left: 22px !important; }
+#zoom-out-button, #appMenu-zoomReduce-button2 {
+	list-style-image: url(".icon/zoom-out.svg") !important; }
+#zoom-in-button, #appMenu-zoomEnlarge-button2 {
+	list-style-image: url(".icon/zoom-in.svg") !important; }
+#appMenu-zoomReset-button2 .toolbarbutton-text { padding: 2px 4px !important; }
+#fullscreen-button, #appMenu-fullscreen-button2 {
+	list-style-image: url(".icon/fullscreen.svg") !important; }
+#fullscreen-button[checked], #appMenu-fullscreen-button2[checked] {
+	list-style-image: url(".icon/fullscreen-exit.svg") !important; }
+
+/* appmenu panel profile */
+.syncNowBtn {
+	list-style-image: url(".icon/sync.svg") !important; }
 
 /* modal and system dialog icons */
 .dialog-close .close-icon > .button-icon {

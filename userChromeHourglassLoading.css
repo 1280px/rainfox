@@ -1,0 +1,9 @@
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+/* thx /u/It_Was_The_Other_Guy */
+.tab-throbber::before, .tab-throbber-tabslist[busy] {
+  background-image: url(".icon/hourglass.svg") !important;
+  animation: none !important;
+  -moz-context-properties: fill !important;
+  fill: currentColor #fff !important;
+}

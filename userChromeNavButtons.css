@@ -1,11 +1,13 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
 /* autohide "forward" button when it can't be pressed */
+#forward-button {
+	transition: var(--userChrome-animation-speed) !important;
+}
 #forward-button[disabled="true"] {
 	margin-left: -36px !important;
 	opacity: 0 !important;
 	pointer-events: none;
-	transition: var(--userChrome-animation-speed) !important;
 }
 
 /* show "forward" button in editor (for some reason firefox ignores ":not([wasdisabled="true"])") */
@@ -14,15 +16,10 @@
 	opacity: 1 !important;
 }
 
-/* add a circle on the "back" button (like it was before proton) */
-#back-button::before {
-	content: '';
-	display: block; position: relative;
-	width: 36px; height: 36px;
-	margin: 0 -34px 0 0;
-	border: 2px solid currentColor; border-radius: 1000px;
-	opacity: 0.6;
-}
+/* add a circle on the "back" button (like it was in pre-Photon FF) */
+/* uses 1px for better look with Photon icons off; this value changes to 2px in userChromeIcons.css */
 #back-button .toolbarbutton-icon {
-	border-radius: 1000px !important;
+	margin-left: 2px !important;
+	border-radius: 1280px !important;
+	box-shadow: 0px 0px 0px 0.92px color-mix(in srgb, currentColor 40%, #fff0) /* uses 0.92px instead of 1px to prevent "overdrawn" circle that appears sometimes for no reason */
 }

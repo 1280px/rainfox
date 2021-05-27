@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
 #customization-footer {
 	background-color: var(--arrowpanel-background) !important;
@@ -11,7 +11,6 @@
 }
 #customization-done-button {
 	color: var(--arrowpanel-color) !important;
-	border: 2px solid #6664 !important;
 	background-color: var(--toolbarbutton-icon-fill-attention) !important;
 	transition: var(--userChrome-animation-speed) !important;
 	box-shadow: 0px 0px 3px -2px var(--autocomplete-popup-highlight-background) !important;
@@ -45,4 +44,54 @@
 }
 #fullscr-toggler {
 	background: var(--toolbar-bgcolor) !important;
+}
+
+/* context menu editor */
+.panel-arrowcontent {
+	border-radius: var(--userChrome-cmenu-rounding) !important;
+	padding: 0 !important;
+	background-clip: padding-box;
+	border: 1px solid var(--arrowpanel-border-color);
+	box-shadow: 0 0 4px hsla(0,0%,0%,.2);
+	margin: 4px;
+}
+#customization-panelHolder #widget-overflow-fixed-list toolbarpaletteitem {
+	color: var(--arrowpanel-color) !important;
+}
+#customization-panelHolder #widget-overflow-fixed-list toolbarpaletteitem:hover {
+	background-color: var(--arrowpanel-dimmed) !important;
+}
+#customization-panelHolder #widget-overflow-fixed-list toolbarpaletteitem:hover:active {
+	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
+	opacity: 50%;
+}
+#customization-panel-container {
+	padding: 0 var(--customization-panel-padding) !important;
+}
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow[side="top"] {
+	display: none !important;
+}
+#customization-panelHolder {
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+}
+#customization-panelHeader {
+	font-size: 1.2em !important;
+	font-weight: 600 !important;
+	padding: 8px 12px !important;
+	text-align: center;
+}
+#customization-panelDescription {
+	font-size: 1em !important;
+	padding: 0 12px 10px !important;
+}
+
+/* unhide amazing whale picture when the menu in empty (why did you remove it, Mozilla? WHY???) */
+#customization-panelHolder > #widget-overflow-fixed-list:empty::before {
+	opacity: 1 !important; 
+}
+
+/* prevent 1px border from blinking when just appeared */
+#customization-panelHolder > #widget-overflow-fixed-list:empty {
+	border-top: 1px solid transparent !important;
 }

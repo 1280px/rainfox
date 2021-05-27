@@ -1,46 +1,34 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* this part of code is an absolute mess. sorry about that, gonna sort it indafuture */
+/* proton-ish tabs (not disconnected from tabbar anymore; no tab-line; roundness) */
 .tabbrowser-tab {
-	padding-inline: 2px !important;
 	background-color: transparent !important; background-clip: padding-box;
-	border-top: 1px solid var(--tabs-border-color);
-}
-.tabbrowser-tab[multiselected] .tab-background::before, tab[visuallyselected] .tab-background::before {
-	border-bottom-right-radius: var(--userChrome-tab-rounding) !important;
-	transform: translateX(calc(-1 * var(--userChrome-tab-rounding) - 1px)) !important; transition: var(--userChrome-animation-speed) !important;
-}
-.tabbrowser-tab[multiselected] .tab-background::after, tab[visuallyselected] .tab-background::after {
-	border-bottom-left-radius: var(--userChrome-tab-rounding) !important;
-	transform: translateX(var(--userChrome-tab-rounding)) !important; transition: var(--userChrome-animation-speed) !important;
+	overflow: hidden !important;
 }
 .tabbrowser-tab[multiselected], .tabbrowser-tab[visuallyselected="true"] {
-	/*! box-shadow: 0px 2px 4px -1px #333; */
 	border-top-left-radius: var(--userChrome-tab-rounding) !important; border-top-right-radius: var(--userChrome-tab-rounding) !important;
 }
 .tab-background, .tab-loading-burst  {
 	border-radius: var(--userChrome-tab-rounding) var(--userChrome-tab-rounding) 0px 0px !important;
-	margin-bottom: -1px !important;
-}
-tab:not(:active) .tab-background {
-	transition: background-color var(--userChrome-animation-speed) !important;
-}
-tab:not([selected]):hover .tab-background {
-	background-color: var(--toolbarbutton-hover-background) !important;
-}
-tab {
-	overflow: hidden !important;
-}
-tab:not([beforeselected-visible])::after {
-	margin-top: 6px !important;	margin-bottom: 4px !important;
-	transition: border-color var(--userChrome-animation-speed), margin-top var(--userChrome-animation-speed) !important;
-}
-tab[beforehovered]::after, tab:hover::after {
-	border-color: transparent !important;
-	margin-top: 20px !important;
+	margin-bottom: -2px !important; /* change this value to make tabs smaller/bigger (container stripes will be broken!!). min = -5; max = 0 */
 }
 
-/* gap between pinned and regular tabs */
+/* make gaps between tabs a little bit smaller without breaking the shadow (works only with unpinned tabs) */
+.tabbrowser-tab:not([pinned]) {
+	margin-inline: -1px !important; /* make gap between bats a little bit smallet without breaking the shadow */
+}
+
+/* force tabs to use toolbar colors -- ENABLE for better default themes; DISABLE for max compatibility with Australis custom themes */
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected="true"]:-moz-lwtheme, #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected="true"]:-moz-lwtheme {
+	background: var(--toolbar-bgcolor) !important;
+}
+
+/* small gap between menu btn and other btns */
+#PanelUI-button {
+	margin-left: 6px !important;
+}
+
+/* small gap between menu button and regular buttons */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
 	margin-inline-start: 6px !important;
 }
@@ -68,9 +56,44 @@ tab[beforehovered]::after, tab:hover::after {
 	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
 }
 
-/* disable if you want to get maximally clean UI, but it might look bad with legacy (Australis or earlier) custom themes 
+/* make toolbarbuttons smaller (it's here because this part of code is currently has no category) */
+toolbar .toolbarbutton-1 {
+	padding: 2px 2px !important;
+}
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+	padding-inline-start: 4px !important;
+}
+#PanelUI-menu-button {
+	padding-inline-end: 4px !important;
+}
+
+/* tab and tabbar shadows (not sure how to treat colorful shadows so they're simply disabled for now) */
+#TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+	box-shadow: 0 0 0px var(--tab-line-color), 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
+}
+/* remove shadows and "flatten" the tabs if window is inactive (seem to be broken by Firefox devs lol) 
+#TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+	box-shadow: 0 0 0px var(--tab-line-color), 0 0 2px 1px var(--tabs-border-color) !important;
+}
+#TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
+	box-shadow: 0 0 1px var(--tab-line-color) !important;
+}/**/
+#nav-bar {
+	box-shadow: 0 -1px var(--userChrome-tabbar-shadow) var(--tabs-border-color) !important;
+}
+
+/* tabbar border -- ENABLE for max compatibility with Australis custom themes; DISABLE to get maximally clean UI 
 #navigator-toolbox {
 	--tabs-border-color: var(--urlbar-box-bgcolor) !important;
+}
+#nav-bar {
+	box-shadow: 0 -1px 0 var(--tabs-border-color) !important;
+}/**/
+
+/* container lines at the bottom */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	border-radius: 12px 14px 0 0 !important;
+	margin: 32px 4px 0 !important;
 }
 
 /* overflow buttons */
@@ -78,7 +101,7 @@ tab[beforehovered]::after, tab:hover::after {
 	padding: calc(var(--toolbarbutton-inner-padding) - 4px) calc(var(--toolbarbutton-inner-padding) - 8px) !important;
 }
 
-/* old-styled control buttons */
+/* old-styled ctrl buttons (currently located at left, try to change to the classic look indafuture) */
 .tab-secondary-label {
 	display: none !important;
 }
@@ -88,33 +111,39 @@ tab[beforehovered]::after, tab:hover::after {
 .titlebar-button {
 	padding: 6px 17px;
 }
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
+	background-color: color-mix(in srgb, currentColor 30%, #9990);
+	border-radius: 1280px !important;
+	margin-top: -1px !important; margin-bottom: -1px !important; margin-inline-end: 4.5px !important;
+	padding: 3px !important; 
+}
+#TabsToolbar .tab-icon-overlay:is([pinned], [sharing]):not([crashed]) {
+	background-color: color-mix(in srgb, currentColor 30%, #9990);
+	border-radius: 1280px !important;
+}
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]):hover, #TabsToolbar .tab-icon-overlay:is([pinned], [sharing]):not([crashed]):hover, .tab-close-button:hover {
+	background-color: color-mix(in srgb, currentColor 15%, #9990) !important;
+}
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]):hover:active, #TabsToolbar .tab-icon-overlay:is([pinned], [sharing]):not([crashed]):hover:active, .tab-close-button:hover:active {
+	background-color: color-mix(in srgb, currentColor 45%, #9990) !important;
+}
+.tab-icon-overlay:not([pinned]) {
+	width: 19px !important;	height: 19px !important;
+	margin-left: -2px !important;
+}
 
 /* close button */
 .tab-close-button {
 	padding: 4px !important;
-	border-radius: 999px !important;
+	border-radius: 1280px !important;
 	width: 21px !important;	height: 21px !important;
 }
 
-/* ctrl buttons (currently located at left, try to change to classic look indafuture) */
-.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
-	background-color: #9995;
-	border-radius: 1000px !important;
-	margin-top: -1px !important; margin-bottom: -1px !important; margin-inline-end: 4.5px !important;
-	padding: 3px !important; 
-}
-.tab-icon-overlay:not([pinned]) {
-	width: 19px !important;	height: 19px !important;
-	 margin-left: -2px !important;
-}
-
-/* dimmed 1px border */
-#TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
-	box-shadow: 0 0 4px rgba(48,48,42,0.6) !important;
-}
-
-/* container lines at the bottom */
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
-	border-radius: 12px 14px 0 0 !important;
-	margin: 32px 4px 0 !important;
+/* tabbar icon notification -- not sure where to place it, so currently it will be here */
+.webextension-browser-action .toolbarbutton-badge {
+	padding: 1px 2px 3px !important;
+	border-radius: 1280px !important;
+	box-shadow: 0px 1px 2px 1px #0002 !important;
+	max-width: 40px !important;
+	font-size: 9.6px !important;
 }

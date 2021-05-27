@@ -1,9 +1,5 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-#urlbar[focused="true"] > #urlbar-background {
-	border-color: var(--lwt-toolbar-field-focus) !important;
-	box-shadow: 0px 1px 14px -3px #0009 !important;
-}
 .urlbarView-body-inner {
 	border-color: var(--panel-separator-color) !important;
 }
@@ -30,3 +26,14 @@
 	border: 0px solid transparent !important;
 	border-radius: var(--toolbarbutton-border-radius);
 }
+
+/* shadows for focused states */
+#urlbar:is([focused=true]):not([open=true]) > #urlbar-background {
+	box-shadow: 0px 0px 8px -2px #0004 !important;
+}
+
+/* more contrast shadow (used in previous versions) -- ENABLE if you can't see the urlbar shadow properly 
+#urlbar[focused="true"] > #urlbar-background {
+	border-color: var(--lwt-toolbar-field-focus) !important;
+	box-shadow: 0px 1px 14px -3px #0009 !important;
+}/**/

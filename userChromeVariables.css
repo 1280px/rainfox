@@ -1,7 +1,7 @@
-/* 　/ //　/　/　　RainFox v0.4 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
 * { 
-	/* how fast animations will be (including bookmarks pane animation). set to "0.03s" (not "0s"!!!) for no animations */
+	/* how fast animations will be (including bookmarks pane animation). set to "0.02s" (not "0s"!!! otherwise autohide bookmarkbar will break) for no animations */
 	--userChrome-animation-speed: 0.2s;            
 	
 	/* roundness of most of the buttons and URLbar. 10+px values look pretty bad */
@@ -12,4 +12,7 @@
 	
 	/* roundness of the corners of tabs. */
 	--userChrome-tab-rounding: 10px;
+	
+	/* shadowness of tabs and tabbar separator. use 0px to get rid of the shadow completely. values less than 0 aren't supported! */
+	--userChrome-tabbar-shadow: 2px;
 }
