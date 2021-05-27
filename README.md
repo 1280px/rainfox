@@ -1,4 +1,4 @@
-<h1 align=center>/   // /　/　RainFox v0.5　//　/ /　/</h1>
+<h1 align=center>/   // /　/　RainFox v0.5<sup><b>β</b></sup>　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/readme-img0.png"></img>
 <br><i>It's like Photon, but better.</i></p>
 
