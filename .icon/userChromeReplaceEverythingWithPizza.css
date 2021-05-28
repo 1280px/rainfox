@@ -1,0 +1,19 @@
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+#browser {
+	content: url("https://source.unsplash.com/SU1LFoeEUkk/") !important; /* pepperoni, my favourite one (cheese pizza is also good) */
+	scale: 0.6;
+	animation: pizzaspin 10s linear infinite !important; /* yeeees! */
+	transition: 2000ms !important;
+}
+#browser:hover {
+	animation: pizzaspin 3s linear infinite !important; /* yyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeaaas!!!!!!!!! */
+}
+#mainPopupSet {
+	content: url("https://i.ibb.co/XLxhF6p/pizza.png") !important; /* no fire foxes allowed */
+	margin: -4px !important;
+}
+#navigator-toolbox {
+	display: none !important;
+}
+@keyframes pizzaspin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } /* yyyyyyyyyyyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasss!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
