@@ -3,7 +3,7 @@
 /* Photon UI icons made by Mozilla and available under MPL-2 license. Source: https://design.firefox.com/icons/ */
 
 /* context menus arrows */
-.menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
+.menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after, #protections-popup-mainView .subviewbutton-nav:not(.notFound)::after {
 	content: url(".icon/menu-arrow.svg") !important; fill: currentColor !important; opacity: 0.6 !important; 
 	-moz-context-properties: fill !important; }
 menuitem[checked="true"] > .menu-iconic-left {
@@ -18,21 +18,46 @@ menuitem[checked="true"] > .menu-iconic-left {
 #urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box[hasException] > #tracking-protection-icon {
 	list-style-image: url(".icon/tracking-protection-off.svg") !important; }
 
+/* tracking protection panel icons */
+.panel-info-button > image {
+	list-style-image: url(".icon/urlbar-info.svg") !important; }
+.trackers-icon {
+	list-style-image: url(".icon/canvas.svg") !important; }
+.socialblock-icon {
+	list-style-image: url(".icon/socialblock.svg") !important; }
+.fingerprinters-icon {
+	list-style-image: url(".icon/fingerprint.svg") !important; }
+.cryptominers-icon {
+	list-style-image: url(".icon/cryptominer.svg") !important; }
+
 /* security dynamic icon */
 #identity-icon {
 	list-style-image: url(".icon/urlbar-info.svg") !important; }
 #identity-box[pageproxystate="valid"].verifiedDomain #identity-icon, #identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
 	list-style-image: url(".icon/urlbar-s-secure.svg") !important; }
 #identity-box[pageproxystate="valid"].weakCipher #identity-icon, #identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon, #identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon, #identity-box[pageproxystate="valid"].certUserOverridden #identity-icon, #identity-box[pageproxystate="valid"].certErrorPage #identity-icon {
-	list-style-image: url(".icon/urlbar-s-weak.svg") !important; fill: currentColor !important; fill-opacity: 1 !important; }
+	list-style-image: url(".icon/urlbar-s-weak.svg") !important; -moz-context-properties: fill, stroke !important; 
+	fill: color-mix(in srgb, currentColor 70%, #fff0) !important; stroke: color-mix(in srgb, currentColor 70%, #fff0) !important; }
 #identity-box[pageproxystate="valid"].notSecure #identity-icon, #identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon, #identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
-	list-style-image: url(".icon/urlbar-s-insecure.svg") !important; }
+	list-style-image: url(".icon/urlbar-s-insecure.svg") !important; -moz-context-properties: fill, stroke !important;
+	stroke: var(--buttons-destructive-bgcolor) !important; }
 #identity-box[pageproxystate="valid"].chromeUI #identity-icon {
 	list-style-image: url(".icon/firefox.svg") !important; }
 #identity-box[pageproxystate="valid"].localResource #identity-icon {
 	list-style-image: url(".icon/urlbar-file.svg") !important; }
 #urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon {
 	list-style-image: url(".icon/urlbar-search.svg") !important; }
+
+/* security panel icons */
+.identity-popup-security-connection {
+	background-image: url(".icon/urlbar-s-insecure.svg") !important; -moz-context-properties: fill, stroke !important;
+	stroke: var(--buttons-destructive-bgcolor) !important; }
+#identity-popup[ciphers="weak"] .identity-popup-security-connection, #identity-popup[mixedcontent~="passive-loaded"][isbroken] .identity-popup-security-connection {
+	background-image: url(".icon/urlbar-s-weak.svg") !important; -moz-context-properties: fill, stroke !important; 
+	fill: color-mix(in srgb, currentColor 70%, #fff0) !important; stroke: color-mix(in srgb, currentColor 70%, #fff0) !important; }
+#identity-popup[connection^="secure"] .identity-popup-security-connection {
+	background-image: url(".icon/urlbar-s-secure.svg") !important;
+}
 
 /* permission icons */
 #permissions-granted-icon {
@@ -278,3 +303,8 @@ list-style-image: url(".icon/folder.svg") !important; }
 /* modal and system dialog icons */
 .dialog-close .close-icon > .button-icon {
 	list-style-image: url(".icon/stop.svg") !important; }
+.button-delete {
+	background-image: url(".icon/delete.svg") !important; }
+.button-add {
+	background-image: url(".icon/newtab.svg") !important; }
+}

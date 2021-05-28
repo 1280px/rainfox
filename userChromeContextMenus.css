@@ -189,7 +189,18 @@ toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
 	background-color: var(--button-active-bgcolor) !important;
 }
 
-/* all tab view (not really proton but more proton than not) */
+/* security panel */
+#identity-popup-clear-sitedata-footer {
+	margin-top: 4px !important;
+}
+.panel-footer.panel-footer-menulike > button {
+	margin: 6px 0 0 !important;
+}
+.identity-popup-security-connection.identity-button {
+	background-position-x: 2px !important;
+}
+
+/* all tab view panel */
 #allTabsMenu-allTabsViewTabs > .all-tabs-item {
 	margin-inline: 0px !important;
 	border-radius: 0px !important;
