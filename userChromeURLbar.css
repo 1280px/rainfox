@@ -37,3 +37,8 @@
 	border-color: var(--lwt-toolbar-field-focus) !important;
 	box-shadow: 0px 1px 14px -3px #0009 !important;
 }/**/
+
+/* urlbar recommendations block bad padding fix */
+#contextual-feature-recommendation { 
+	padding: 2px !important;
+}

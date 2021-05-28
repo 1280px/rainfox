@@ -1,0 +1,20 @@
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+/* make sure you selected only ONE of the options. Option 1 is default */
+
+/* option 1: show containers as lines at the tab bottom (photon-like) */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	border-radius: 12px 14px 0 0 !important;
+	margin-top: calc( var(--tab-min-height) - 4px) !important;
+}/**/
+
+/* option 2: show container as a part of tab background
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	border-radius: var(--userChrome-tab-rounding) var(--userChrome-tab-rounding) 0px 0px !important;
+}
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	background-color: color-mix(in srgb, var(--identity-icon-color) 30%, #fff0) !important;
+	min-height: 100px !important;
+	display: flex !important;
+	margin: 0 !important;
+}/**/

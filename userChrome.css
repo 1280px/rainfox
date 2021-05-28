@@ -37,10 +37,6 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 
-/* ###  Centered Autohide Bookmark Toolbar  ### */
-@import "userChromeBookmarks.css";
-
-
 /* ### ###   Context Menus and Panels   ### ### */
 @import "userChromeContextMenus.css";
 
@@ -49,8 +45,34 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 @import "userChromeDownloads.css";
 
 
+
+
+
+/* ### ###   Photon-like Rounded Tabs   ### ### */
+@import "userChromeTabs.css";
+
+
+/* ### ###  Various Tabbar-rel Changes  ### ### */
+@import "userChromeTabbar.css";
+
+
+/* ###   Tab Container Line/Cover Control   ### */
+@import "userChromeTabContainers.css";
+
+
 /* ###   Hourglass Tabs Loading Animation   ### */
 @import "userChromeHourglassLoading.css";
+
+
+/* ###   Autohide Tab Names until Hovered   ### */
+/* @import "userChromeTabParanoia.css";
+
+
+
+
+
+/* ###  Centered Autohide Bookmark Toolbar  ### */
+@import "userChromeBookmarks.css";
 
 
 /* ### ###  Menubar Animation & Shadow  ### ### */
@@ -63,14 +85,6 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 /* ### ##  Adaptive 'Customize...' Page  ## ### */
 @import "userChromePageCustomize.css";
-
-
-/* ###   Hourglass Tabs Loading Animation   ### */
-/* @import "userChromeParanoia.css";
-
-
-/* ### ###   Photon-like Rounded Tabs   ### ### */
-@import "userChromeTabs.css";
 
 
 /* ### ###     Small URLbar Changes     ### ### */

@@ -73,21 +73,21 @@ panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox {
 }
 
 /* menus theme-adaptive colours */
-menu, menuitem, menucaption, .ac-title-text {
+menu, menuitem, menucaption, .ac-title-text, .labels-wrapper > .label-row {
 	color: var(--arrowpanel-color) !important;
 }
 .popup-internal-box, .autocomplete-richlistbox, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
 	background: var(--arrowpanel-background) !important;
 	border: 0px !important;
 }
-menu:hover:not([disabled="true"]), menuitem:hover:not([disabled="true"]), menucaption:hover:not([disabled="true"]), menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
-	background-color: var(--arrowpanel-dimmed) !important;
+menu:hover:not([disabled="true"]), menuitem:hover:not([disabled="true"]), menucaption:hover:not([disabled="true"]), menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]), .autocomplete-richlistitem:hover {
+	background: color-mix(in srgb, var(--arrowpanel-color) 17%, transparent) !important;
 }
 menu[disabled="true"], menuitem[disabled="true"], menucaption[disabled="true"], .ac-title-text[disabled="true"] {
 	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
 	opacity: 50%;
 }
-menu:active:not([disabled="true"]), menuitem:active:not([disabled="true"]), menucaption:active:not([disabled="true"]), #allTabsMenu-allTabsViewTabs > .all-tabs-item:hover:active {
+menu:active:not([disabled="true"]), menuitem:active:not([disabled="true"]), menucaption:active:not([disabled="true"]), #allTabsMenu-allTabsViewTabs > .all-tabs-item:hover:active, .autocomplete-richlistitem:active {
 	background-color: var(--panelview-toolbarbutton-active-bgcolor) !important;
 	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
 }
@@ -104,7 +104,7 @@ menupopup menuseparator {
 .menu-right {
 	opacity: 0.6;
 	float: inline-end;
-	/*! margin: 0px !important; */	margin-right: 8px !important;
+	margin-right: 8px !important;
 	padding: 2px;
 	margin-top: 2px !important;
 }

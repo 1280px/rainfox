@@ -1,0 +1,65 @@
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+/* tabbar zone improvements */
+#navigator-toolbox {
+	--tabs-border-color: #4442 !important;
+}
+#navigator-toolbox {
+	border-bottom: 1px solid var(--toolbar-bgcolor) !important;
+}
+.titlebar-spacer[type="pre-tabs"] {
+	border-inline-end: 0px !important;
+	width: 0px !important;
+}
+.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+	padding-right: var(--userChrome-tab-rounding) !important;
+}
+#TabsToolbar .toolbarbutton-1 {
+	margin: 0 0 !important;
+}
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #alltabs-button .toolbarbutton-badge-stack {
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+	height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
+}
+
+/* small gap between menu btn and other btns */
+#PanelUI-button {
+	margin-left: 6px !important;
+}
+
+/* make toolbarbuttons smaller (it's here because this part of code is currently has no category) */
+toolbar .toolbarbutton-1 {
+	padding: 2px 2px !important;
+}
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+	padding-inline-start: 4px !important;
+}
+#PanelUI-menu-button {
+	padding-inline-end: 4px !important;
+}
+
+/* tab shadows (not sure how to treat colorful shadows so they're simply disabled for now) */
+#TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+	box-shadow: 0 0 0px var(--tab-line-color), 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
+}
+#nav-bar {
+	box-shadow: 0 -1px var(--userChrome-tabbar-shadow) var(--tabs-border-color) !important;
+}
+
+/* tabbar border -- ENABLE for max compatibility with Australis custom themes; DISABLE to get maximally clean UI 
+#navigator-toolbox {
+	--tabs-border-color: var(--urlbar-box-bgcolor) !important;
+}
+#nav-bar {
+	box-shadow: 0 -1px 0 var(--tabs-border-color) !important;
+}/**/
+
+/* tabbar icon notification */
+.webextension-browser-action .toolbarbutton-badge {
+	padding: 1px 2px 3px !important;
+	border-radius: 1280px !important;
+	box-shadow: 0px 1px 2px 1px #0002 !important;
+	max-width: 40px !important;
+	font-size: 9.6px !important;
+}

@@ -1,0 +1,19 @@
+/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+
+.tab-content {
+	transition: var(--userChrome-animation-speed) !important;
+}
+
+/* make sure you selected only ONE of the options. Option 1 is default */
+
+/* option 1: hide tab-content underneath the tabs */
+tab:not([multiselected]) .tab-content:not(:hover):not([selected]) {
+	margin-bottom: -64px !important; }/**/
+
+/* option 2: fade out tab-content 
+tab:not([multiselected]) .tab-content:not(:hover):not([selected]) {
+  opacity: 0% !important; }/**/
+
+/* option 3: blur tab-content 
+tab:not([multiselected]) .tab-content:not(:hover):not([selected]) {
+  filter: blur(8px) !important; }/**/

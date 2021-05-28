@@ -9,6 +9,6 @@
 	transition: var(--userChrome-animation-speed) !important;
 	border-radius: var(--toolbarbutton-border-radius) !important;
 }
-toolbarbutton, .tab-close-button, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box, #appMenu-zoomReset-button2 .toolbarbutton-text, #urlbar-zoom-button, .urlbarView-action, .urlbar-addon-page-action, toolbarpaletteitem, .tab-icon-overlay, #allTabsMenu-allTabsViewTabs > .all-tabs-item {
+toolbarbutton, .tab-close-button, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box, #contextual-feature-recommendation > #cfr-button, #reader-mode-button, #appMenu-zoomReset-button2 .toolbarbutton-text, #urlbar-zoom-button, .urlbarView-action, .urlbar-addon-page-action, toolbarpaletteitem, .tab-icon-overlay, #allTabsMenu-allTabsViewTabs > .all-tabs-item {
 	transition: var(--userChrome-animation-speed) !important;
 }

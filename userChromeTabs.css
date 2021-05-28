@@ -23,48 +23,9 @@
 	background: var(--toolbar-bgcolor) !important;
 }
 
-/* small gap between menu btn and other btns */
-#PanelUI-button {
-	margin-left: 6px !important;
-}
-
-/* small gap between menu button and regular buttons */
+/* small gap between pinned and regular tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
 	margin-inline-start: 6px !important;
-}
-
-/* tabbar zone improvements */
-#navigator-toolbox {
-	--tabs-border-color: #4442 !important;
-}
-#navigator-toolbox {
-	border-bottom: 1px solid var(--toolbar-bgcolor) !important;
-}
-.titlebar-spacer[type="pre-tabs"] {
-	border-inline-end: 0px !important;
-	width: 0px !important;
-}
-.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-	padding-right: var(--userChrome-tab-rounding) !important;
-}
-#TabsToolbar .toolbarbutton-1 {
-	margin: 0 0 !important;
-}
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #alltabs-button .toolbarbutton-badge-stack {
-	width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
-	height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
-	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
-}
-
-/* make toolbarbuttons smaller (it's here because this part of code is currently has no category) */
-toolbar .toolbarbutton-1 {
-	padding: 2px 2px !important;
-}
-#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
-	padding-inline-start: 4px !important;
-}
-#PanelUI-menu-button {
-	padding-inline-end: 4px !important;
 }
 
 /* tab and tabbar shadows (not sure how to treat colorful shadows so they're simply disabled for now) */
@@ -90,12 +51,6 @@ toolbar .toolbarbutton-1 {
 	box-shadow: 0 -1px 0 var(--tabs-border-color) !important;
 }/**/
 
-/* container lines at the bottom */
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
-	border-radius: 12px 14px 0 0 !important;
-	margin: 32px 4px 0 !important;
-}
-
 /* overflow buttons */
 #scrollbutton-up, #scrollbutton-down {
 	padding: calc(var(--toolbarbutton-inner-padding) - 4px) calc(var(--toolbarbutton-inner-padding) - 8px) !important;
@@ -120,6 +75,8 @@ toolbar .toolbarbutton-1 {
 #TabsToolbar .tab-icon-overlay:is([pinned], [sharing]):not([crashed]) {
 	background-color: color-mix(in srgb, currentColor 30%, #9990);
 	border-radius: 1280px !important;
+	stroke: none !important;
+	color: currentColor !important;
 }
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]):hover, #TabsToolbar .tab-icon-overlay:is([pinned], [sharing]):not([crashed]):hover, .tab-close-button:hover {
 	background-color: color-mix(in srgb, currentColor 15%, #9990) !important;
@@ -137,13 +94,4 @@ toolbar .toolbarbutton-1 {
 	padding: 4px !important;
 	border-radius: 1280px !important;
 	width: 21px !important;	height: 21px !important;
-}
-
-/* tabbar icon notification -- not sure where to place it, so currently it will be here */
-.webextension-browser-action .toolbarbutton-badge {
-	padding: 1px 2px 3px !important;
-	border-radius: 1280px !important;
-	box-shadow: 0px 1px 2px 1px #0002 !important;
-	max-width: 40px !important;
-	font-size: 9.6px !important;
 }
