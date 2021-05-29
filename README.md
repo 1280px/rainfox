@@ -1,5 +1,6 @@
+<!-- <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/logo.png"></img> -->
 <h1 align=center>/　 // /　/　RainFox 0.5<sup><b>β</b></sup>　//　/ /　/</h1>
-<p align=center><img src="https://github.com/1280px/rainfox/blob/master/readme-img0.png"></img>
+<p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
 <br><i>it's like Photon, but better</i></p>
 
 
@@ -10,17 +11,17 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
 
 <pre><p align=center>Pre-Proton rounded tabs without lines<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
-<pre><p>Photon-ish context menus and panels!<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
-<pre>Animated auto-hide bookmarks panel<br><p align=center>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
-<pre><p>Animated auto-hide "Forward" button<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-tabs.png" align=center></img></p></pre>
+<pre><p align=center>Photon-ish context menus and panels!<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-cmenus.png" align=center></img></p></pre>
+<pre><p align=center>Animated auto-hide bookmarks panel<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-bkpanel.png" align=center></img></p></pre>
+<pre><p align=center>Animated auto-hide "Forward" button<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-navbtns.png" align=center></img></p></pre>
 <pre><p align=center>Hourglass tab loading animation<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
-<pre><p><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-hrgls.png" align=center></img></p></pre>
+<pre><p align=center><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-paranoia.png" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
 
@@ -38,6 +39,6 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 
 <h1 align=center>/ //　/　//　Known Issues　// / /　 / /</h1><ol>
 <li><b>[!]</b> System shadows still appear on some of the context menus (currently seems to be impossible to fix) 
-<li>Icon scaling issues on non-regular scaling (anything except 100%)
+<li>Icon scaling issues with any system scaling except 100%
 <li>Refresh icon animation is broken (and I don't know how to fix it)
 <li>Bookmarks bar may go trippy sometimes when working with folders
