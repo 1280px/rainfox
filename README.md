@@ -8,19 +8,19 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 
 <h1 align=center>/ //　/   /　/　Features　/　//　/ / //</h1>
 <h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
-  
-<pre>Pre-Proton rounded tabs without lines
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
-<pre>Photon-ish context menus and panels!
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
-<pre>Animated auto-hide bookmarks panel
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
-<pre>Animated auto-hide "Forward" button
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
-<pre>Hourglass tab loading animation
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
-<pre><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/readme-img.png" align=center></img></pre>
+
+<pre><p align=center>Pre-Proton rounded tabs without lines<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<pre><p>Photon-ish context menus and panels!<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<pre><p align=center>Animated auto-hide bookmarks panel<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<pre><p>Animated auto-hide "Forward" button<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<pre><p align=center>Hourglass tab loading animation<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
+<pre><p><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)<br>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
 
