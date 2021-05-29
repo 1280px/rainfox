@@ -28,6 +28,11 @@
 	margin-inline-start: 6px !important;
 }
 
+/* fix pinned tabs get shifted to the right if tabbar is overflown. DISABLE if your tabs get shifted to the left (you probably using Firefox 90 release since this shift to the right is actually a Firefox bug) */
+#tabbrowser-tabs[positionpinnedtabs] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[pinned] {
+	transform: translateX(-28px);
+}
+
 /* tab and tabbar shadows (not sure how to treat colorful shadows so they're simply disabled for now) */
 #TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
 	box-shadow: 0 0 0px var(--tab-line-color), 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
