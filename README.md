@@ -1,6 +1,6 @@
 <h1 align=center>/　 // /　/　RainFox 0.5<sup><b>β</b></sup>　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/readme-img0.png"></img>
-<br><i>It's like Photon, but better.</i></p>
+<br><i>it's like Photon, but better</i></p>
 
 
 Started as a remix of MaterialFox and QuietFox, the main task of this userChrome style is to make Firefox more theme-adaptive, smooth and homogeneous. After Proton UI redesign came in, this style also tends to be some kind of "Photon-theme-Restorer" but with improvements on the previous design. <br>
@@ -13,7 +13,7 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
 <pre><p>Photon-ish context menus and panels!<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
-<pre><p align=center>Animated auto-hide bookmarks panel<br>
+<pre>Animated auto-hide bookmarks panel<br><p align=center>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
 <pre><p>Animated auto-hide "Forward" button<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
