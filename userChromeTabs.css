@@ -25,7 +25,7 @@
 
 /* small gap between pinned and regular tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
-	margin-inline-start: 6px !important;
+	margin-inline-start: 4px !important;
 }
 
 /* fix pinned tabs get shifted to the right if tabbar is overflown. DISABLE if your tabs get shifted to the left (you probably using Firefox 90 release since this shift to the right is actually a Firefox bug) */
@@ -33,28 +33,13 @@
 	transform: translateX(-28px);
 }
 
-/* tab and tabbar shadows (not sure how to treat colorful shadows so they're simply disabled for now) */
+/* tab shadows */
 #TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
 	box-shadow: 0 0 0px var(--tab-line-color), 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
 }
-/* remove shadows and "flatten" the tabs if window is inactive (seem to be broken by Firefox devs lol) 
-#TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
-	box-shadow: 0 0 0px var(--tab-line-color), 0 0 2px 1px var(--tabs-border-color) !important;
-}
-#TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
-	box-shadow: 0 0 1px var(--tab-line-color) !important;
-}/**/
 #nav-bar {
 	box-shadow: 0 -1px var(--userChrome-tabbar-shadow) var(--tabs-border-color) !important;
 }
-
-/* tabbar border -- ENABLE for max compatibility with Australis custom themes; DISABLE to get maximally clean UI 
-#navigator-toolbox {
-	--tabs-border-color: var(--urlbar-box-bgcolor) !important;
-}
-#nav-bar {
-	box-shadow: 0 -1px 0 var(--tabs-border-color) !important;
-}/**/
 
 /* overflow buttons */
 #scrollbutton-up, #scrollbutton-down {

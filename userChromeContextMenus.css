@@ -1,6 +1,6 @@
 /* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
-/* hide system context menus (probably obsolete now, reinvestigate and clean indafuture) */
+/* hide system context menus */
 menu, menuitem, menucaption, .autocomplete-richlistbox, .autocomplete-richlistitem {
 	-moz-appearance: none !important;
 }
@@ -54,20 +54,19 @@ menu > .menu-text, menuitem > .menu-text, menu > .menu-iconic-text, menuitem > .
 	box-shadow: 0px 1px 10px -3px #0009 !important;
 	padding: 6px 0 !important;
 }
-panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox {
-	border-radius: var(--userChrome-cmenu-rounding) !important;
-	box-shadow: 0px 1px 10px -3px #0009 !important;
-	padding: 3px 0 !important;
+
+slot {
+	margin: 4px !important;
 }
-.panel-arrowcontainer .panel-arrowcontent, .popup-internal-box, hbox[flex="1"][part="innerbox"] {
+.panel-arrowcontainer .panel-arrowcontent, slot, .popup-internal-box, hbox[flex="1"][part="innerbox"] {
 	border-radius: var(--userChrome-cmenu-rounding) !important;
 }
 .in-bookmarks-menu {
 	padding-bottom: 5px !important;	padding-top: 5px !important;
 }
 
-/* remove ugly borders */
-.panel-arrowcontent {
+/* remove ugly borders (mozilla PLEASE STOP MOVING EVERYTHING TO HTML:SLOT PLEASE) */
+.panel-arrowcontent, slot {
 	padding-top: 0px !important;
 	border: none !important;
 }
@@ -81,8 +80,9 @@ menu, menuitem, menucaption, .ac-title-text, .labels-wrapper > .label-row {
 	border: 0px !important;
 }
 menu:hover:not([disabled="true"]), menuitem:hover:not([disabled="true"]), menucaption:hover:not([disabled="true"]), menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]), .autocomplete-richlistitem:hover {
-	background: color-mix(in srgb, var(--arrowpanel-color) 17%, transparent) !important;
+	background: var(--panelview-toolbarbutton-hover-bgcolor) !important;
 }
+
 menu[disabled="true"], menuitem[disabled="true"], menucaption[disabled="true"], .ac-title-text[disabled="true"] {
 	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
 	opacity: 50%;
@@ -145,6 +145,9 @@ menupopup menuseparator {
 }
 
 /* account controls (proton menu panel) */
+#appMenu-header-description {
+	font-weight: 700 !important;
+}
 #fxa-menu-avatar {
 	display: block !important;
 	margin-right: 12px;
