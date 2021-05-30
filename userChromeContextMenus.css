@@ -111,6 +111,9 @@ menupopup menuseparator {
 #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
 	fill-opacity: 1.0 !important;
 }
+toolbarbutton {
+	fill: var(--arrowpanel-color);
+}
 
 /* menu shortcut keys */
 .menu-accel, .menu-iconic-accel {
