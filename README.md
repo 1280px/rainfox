@@ -11,17 +11,17 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
 
 <pre><p align=center>Pre-Proton rounded tabs without lines<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-tabs.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
 <pre><p align=center>Photon-ish context menus and panels!<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-cmenus.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat2.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide bookmarks panel<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-bkpanel.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat3.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide "Forward" button<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-navbtns.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat4.webp" align=center></img></p></pre>
 <pre><p align=center>Hourglass tab loading animation<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-hrgls.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat5.webp" align=center></img></p></pre>
 <pre><p align=center><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feature-paranoia.png" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
 
