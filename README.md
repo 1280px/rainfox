@@ -43,4 +43,4 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <li>Icon scaling issues with any system scaling except 100%
 <li>Refresh icon animation is broken (and I don't know how to fix it)
 <li>Bookmarks bar may go trippy sometimes when working with folders
-<h3 align=center>!!! Before reporting a new issue please check if you're using the latest build of Firefox Nightly !!!</h3>
+<h3 align=center>!!! Before reporting an issue please check if you're using the latest build of Nightly !!!</h3>
