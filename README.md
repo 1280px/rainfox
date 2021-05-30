@@ -34,7 +34,7 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 </ul>
 <b>Style was tested on Firefox 90 @ Windows 10 (100% and 125% scaling).<br>I'll appreciate your feedback from other systems! (especially from macOS and Linux)</b>
 <br><br>
-<small><i>style doesn't work? Check <a href="https://github.com/1280px/rainfox/blob/master/!help%20help%20style%20doesnt%20work.txt">this step-by-step guide</a> to find a solution!</i></smakk>
+<small><i>Style doesn't work? Check <a href="https://github.com/1280px/rainfox/blob/master/!help%20help%20style%20doesnt%20work.txt">this step-by-step guide</a> to find a solution!</i></smakk>
 
 
 <h1 align=center>/ //　/　//　Known Issues　// / /　 / /</h1><ol>
