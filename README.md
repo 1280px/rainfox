@@ -27,7 +27,7 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 
 
 <h1 align=center>/ / /　// /　Requirements　//　 / // /</h1><ul>
-<li>Mozilla Firefox 90.0 or newer <i>(looking for pre-Proton version? Check the first release, v3.0!)</i>
+<li>Mozilla Firefox 90.0 or newer <i>(looking for pre-Proton version? Check <a href="https://github.com/1280px/rainfox/releases/tag/v0.3">release v3.0!</a>)</i>
 <li><code>toolkit.legacyUserProfileCustomizations.stylesheets == TRUE</code> <i>(enables custom CSS)</i>
 <li><code>svg.context-properties.content.enabled == TRUE</code> <i>(allows custom SVGs use context colors)</i>
 <li><code>security.secure_connection_icon_color_gray == FALSE</code> <i>(recommended; uses green color for secure connection icons)</i>
