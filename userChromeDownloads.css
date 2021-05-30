@@ -1,5 +1,14 @@
 /* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
 
+/* make panel smaller */
+#downloadsPanel-mainView {
+	width: 32em !important;
+	padding: 0 0.62em 0.62em !important;
+}
+#downloadsListBox {
+	margin: 0.31em 0 0.31em !important;
+}
+
 /* buttons icons fix */
 .button-box {
 	padding-block: 3px !important; padding-inline: 5px !important;
@@ -15,13 +24,24 @@
 
 /* normal download prograss bar (if anyone's intrested, I used elementaryOS 0.6 beta ISO for testing :D) */
 .downloadProgress {
-	border: none !important; border-radius: 1280px !important;
+	border: none !important; border-radius: 4px !important;
 	background-color: var(--button-active-bgcolor) !important;
-	margin: 6px 0 0px !important;
+	margin: 6px 0 0 !important;
 	height: 4px !important;
+  transition: var(--userChrome-animation-speed);
 }
 .downloadProgress::-moz-progress-bar {
 	background-color: var(--toolbarbutton-icon-fill-attention) !important;
-	border: none !important; border-radius: 1280px;
+	border: none !important; border-radius: 4px;
 	margin: 0 0 !important; height: inherit !important;
+}
+
+/* make download progress bar bigger when hover */
+.downloadProgress:hover {
+	height: 32px !important;
+	margin: 3px 0 -2px !important;
+	position: relative;
+}
+.downloadProgress:hover::-moz-progress-bar {
+	border-right: 2px double var(--arrowpanel-background) !important;
 }
