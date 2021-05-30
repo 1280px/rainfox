@@ -7,6 +7,7 @@
 Started as a remix of MaterialFox and QuietFox, the main task of this userChrome style is to make Firefox more theme-adaptive, smooth and homogeneous. After Proton UI redesign came in, this style also tends to be some kind of "Photon-theme-Restorer" but with improvements on the previous design. <br>
 The current philosophy of this uC is to save Proton's clarity and simplicity while re-implementing nice Photon's icons, elements and general look & feel
 
+
 <h1 align=center>/ //　/   /　/　Features　/　//　/ / //</h1>
 <h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
 
@@ -23,7 +24,6 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <pre><p align=center><b>[X]</b> Paranoia mode (unselected tabs are hidden until you hover it)<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
-
 
 
 <h1 align=center>/ / /　// /　Requirements　//　 / // /</h1><ul>
