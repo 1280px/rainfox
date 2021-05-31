@@ -1,5 +1,3 @@
-<h3 align=center>！！！ This style currently works only on Firefox Nightly 90.0a ！！！</h3>
-
 <h1 align=center>/　 // /　/　RainFox 0.5<sup><b>β</b></sup>　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
 <br><i>it's like Photon, but better</i></p>
@@ -43,4 +41,4 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <li>Icon scaling issues with any system scaling except 100%
 <li>Refresh icon animation is broken (and I don't know how to fix it)
 <li>Bookmarks bar may go trippy sometimes when working with folders
-<h3 align=center>!!! Before reporting an issue please check if you're using the latest build of Nightly !!!</h3>
+<h3 align=center>Please chek if you're using the last version of RainFox before reporting as issue!</h3>
