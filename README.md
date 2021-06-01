@@ -4,11 +4,11 @@
 
 
 Started as a remix of MaterialFox and QuietFox, the main task of this userChrome style is to make Firefox more theme-adaptive, smooth and homogeneous. After Proton UI redesign came in, this style also tends to be some kind of "Photon-theme-Restorer" but with improvements on the previous design. <br>
-The current philosophy of this uC is to save Proton's clarity and simplicity while re-implementing nice Photon's icons, elements and general look & feel
+The current philosophy of this uC is to keep Proton's clarity and simplicity while re-implementing nice Photon's icons, elements and general look & feel
 
 
 <h1 align=center>/ //　/   /　/　Features　/　//　/ / //</h1>
-<h3>Any of the features can be easily enabled/disabled in <code>userChrome.css</code> if you want to. <br> <b>[X]</b> means "disabled by default"</h3>
+<h3>Any of the features can be easily enabled/disabled in userChrome.css if you want to. <br> <code><b>[X]</b> means "disabled by default"</code></h3>
 
 <pre><p align=center>Pre-Proton rounded tabs without lines<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
@@ -41,4 +41,4 @@ The current philosophy of this uC is to save Proton's clarity and simplicity whi
 <li>Icon scaling issues with any system scaling except 100%
 <li>Refresh icon animation is broken (and I don't know how to fix it)
 <li>Bookmarks bar may go trippy sometimes when working with folders
-<h3 align=center>Please chek if you're using the last version of RainFox before reporting as issue!</h3>
+<h3 align=center>Please check if you're using the last version of RainFox before reporting as issue!</h3>
