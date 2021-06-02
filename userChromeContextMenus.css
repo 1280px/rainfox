@@ -8,6 +8,11 @@ menupopup, menupopup menuitem, menupopup menu, menupopup menuseparator {
 	-moz-appearance: none !important; -moz-default-appearance: none !important;
 }
 
+/* hide system context menu shadows (a huge thanks to /u/Guerra24 !!) */
+menupopup {
+		-moz-window-shadow: none !important;
+}
+
 /* paddings and stuff */
 menu, menuitem, menucaption, .ac-title {
 	height: 24px;
