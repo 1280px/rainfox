@@ -33,12 +33,22 @@ The current philosophy of this uC is to keep Proton's clarity and simplicity whi
 </ul>
 <b>Style was tested on Firefox 90 @ Windows 10 (100% and 125% scaling).<br>I'll appreciate your feedback from other systems! (especially from macOS and Linux)</b>
 <br><br>
-<small><i>Style doesn't work? Check <a href="https://github.com/1280px/rainfox/blob/master/!help%20help%20style%20doesnt%20work.txt">this step-by-step guide</a> to find a solution!</i></smakk>
+<small><i>Style doesn't work? Check <a href="https://github.com/1280px/rainfox/blob/master/!help%20help%20style%20doesnt%20work.txt">this step-by-step guide</a> to find a solution!</i></small>
 
 
 <h1 align=center>/ //　/　//　Known Issues　// / /　 / /</h1><ol>
+<h3 align=center>Please check if you're using the last version of RainFox before reporting as issue!</h3>
 <li><b>[!]</b> System shadows still appear on some of the context menus (currently seems to be impossible to fix) 
 <li>Icon scaling issues with any system scaling except 100%
 <li>Refresh icon animation is broken (and I don't know how to fix it)
-<li>Bookmarks bar may go trippy sometimes when working with folders
-<h3 align=center>Please check if you're using the last version of RainFox before reporting as issue!</h3>
+<li>Bookmarks bar may go trippy sometimes when working with folders</ol>
+
+<br><br>
+
+<h2 align=center>Custom themes used for screenshots:</h3><p align=center>
+<a href="https://addons.mozilla.org/ru/firefox/addon/blues-yellows/" target=_blank>—　blues&yellows (by kaylakh10)　—</a><br>
+<a href="https://addons.mozilla.org/ru/firefox/addon/rain-storm/" target=_blank>—　Rain Storm (by dietotaku)　—</a><br>
+<a href="https://addons.mozilla.org/ru/firefox/addon/rainbow-blur-1/" target=_blank>—　Rainbow Blur (by Alix P)　—</a><br>
+<a href="https://addons.mozilla.org/ru/firefox/addon/modern-purple-polygon/" target=_blank>—　Modern Purple Polygon (by Kujou)　—</a><br>
+<a href="https://addons.mozilla.org/ru/firefox/addon/windows95aesthetic/" target=_blank>—　Ｗｉｎｄｏｗｓ　９５ (by Vovan29)　—</a><br>
+<a href="https://addons.mozilla.org/ru/firefox/addon/purp-grid/" target=_blank>—　Purp Grid (by Benedict)　—</a></p>
