@@ -43,5 +43,5 @@
 	position: relative;
 }
 .downloadProgress:hover::-moz-progress-bar {
-	border-right: 2px double var(--arrowpanel-background) !important;
+	border-right: 2px double currentColor !important;
 }
