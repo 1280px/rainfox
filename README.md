@@ -38,9 +38,8 @@ The current philosophy of this uC is to keep Proton's clarity and simplicity whi
 
 <h1 align=center>/ //　/　//　Known Issues　// / /　 / /</h1><ol>
 <h3 align=center>Please check if you're using the last version of RainFox before reporting as issue!</h3>
-<li><b>[!]</b> System shadows still appear on some of the context menus (currently seems to be impossible to fix) 
 <li>Icon scaling issues with any system scaling except 100%
-<li>Refresh icon animation is broken (and I don't know how to fix it)
+<li>Refresh icon animation is partially broken (and I don't know how to fix it)
 <li>Bookmarks bar may go trippy sometimes when working with folders</ol>
 
 <br><br>
