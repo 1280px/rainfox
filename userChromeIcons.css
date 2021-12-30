@@ -1,6 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
-
-/* Photon UI icons made by Mozilla and available under MPL-2 license. Source: https://design.firefox.com/icons/ */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 /* context menus arrows */
 .menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after, #protections-popup-mainView .subviewbutton-nav:not(.notFound)::after {
@@ -158,7 +156,7 @@ menuitem[checked="true"] > .menu-iconic-left {
 	list-style-image: url(".icon/bookmarks-tray.svg") !important; }
 #add-ons-button, #identity-box[pageproxystate="valid"].extensionPage #identity-icon {
 	list-style-image: url(".icon/addon.svg") !important; }
-#preferences-button, .search-setting-button-compact  .button-box  .button-icon {
+#preferences-button, .search-setting-button > .button-box > .button-icon {
 	list-style-image: url(".icon/settings.svg") !important; }
 #tabs-newtab-button, #TabsToolbar #new-tab-button {
 	list-style-image: url(".icon/newtab.svg") !important; }
@@ -182,7 +180,6 @@ menuitem[checked="true"] > .menu-iconic-left {
 	list-style-image: url(".icon/pocket.svg") !important; }
 #privatebrowsing-button {
 	list-style-image: url(".icon/private.svg") !important; }
-}
 
 /* refresh button -- one of the animations is competely broken and idk how to fix it :( */
 #stop-reload-button[animate] > #reload-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
@@ -307,4 +304,3 @@ list-style-image: url(".icon/folder.svg") !important; }
 	background-image: url(".icon/delete.svg") !important; }
 .button-add {
 	background-image: url(".icon/newtab.svg") !important; }
-}

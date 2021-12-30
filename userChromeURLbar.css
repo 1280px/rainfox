@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 .urlbarView-body-inner {
 	border-color: var(--panel-separator-color) !important;
@@ -6,11 +6,6 @@
 .urlbarView-row-inner {
 	transition: var(--userChrome-animation-speed) !important;
 	border-radius: var(--toolbarbutton-border-radius) !important;
-}
-.urlbar-icon {
-	width: 28px !important;	height: 28px !important;
-	padding: 6px !important;
-	transition: var(--userChrome-animation-speed) !important;
 }
 
 /* smaller search engine paddings */
@@ -27,8 +22,14 @@
 	border-radius: var(--toolbarbutton-border-radius);
 }
 
-/* shadows for focused states */
-#urlbar:is([focused=true]):not([open=true]) > #urlbar-background {
+/* remove "Firefox Suggest" */
+.urlbarView-row[label] {
+	display: none;
+}
+
+/* focused state - use shadow and remove outline */
+#urlbar:is([focused=true]):not([open=true]) > #urlbar-background, #searchbar:focus-within {
+	outline: none !important;
 	box-shadow: 0px 0px 8px -2px #0004 !important;
 }
 

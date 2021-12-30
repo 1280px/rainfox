@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 #customization-footer {
 	background-color: var(--arrowpanel-background) !important;
@@ -59,10 +59,10 @@
 	color: var(--arrowpanel-color) !important;
 }
 #customization-panelHolder #widget-overflow-fixed-list toolbarpaletteitem:hover {
-	background-color: var(--arrowpanel-dimmed) !important;
+	background-color: var(--panel-item-hover-bgcolor) !important;
 }
 #customization-panelHolder #widget-overflow-fixed-list toolbarpaletteitem:hover:active {
-	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
+	color: var(--panel-item-hover-bgcolor, rgba(127,127,127,0.5)) !important;
 	opacity: 50%;
 }
 #customization-panel-container {

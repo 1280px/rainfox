@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 /* tabbar zone improvements */
 #navigator-toolbox {
@@ -30,6 +30,10 @@
 	height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
 	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
 }
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+	border-radius: var(--tab-border-radius);
+	padding: calc( var(--toolbarbutton-inner-padding) - 2px);
+}
 toolbar .toolbarbutton-1 {
 	padding: 2px 2px !important;
 }
@@ -39,6 +43,7 @@ toolbar .toolbarbutton-1 {
 #PanelUI-menu-button {
 	padding-inline-end: 4px !important;
 }
+
 
 /* tabbar icon notification */
 .webextension-browser-action .toolbarbutton-badge {

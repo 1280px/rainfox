@@ -1,0 +1,3 @@
+Photon UI icons made by Mozilla and use MPL-2 license. 
+
+More icons: (icons repo goes here)

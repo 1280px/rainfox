@@ -1,14 +1,40 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
-/* general elements rounding and animations (warning - tons of unsorted classeas and ids) */
-/* one day i'll sort this mess, i swear! one day... */
-#identity-box, #appMenu-fxa-status2:not([fxastatus="signedin"]) #appMenu-fxa-label2 {
+/* general elements rounding and animations (warning - tons of unsorted classes and ids) */
+#identity-box,
+#appMenu-fxa-status2:not([fxastatus="signedin"]) #appMenu-fxa-label2 {
 	border-radius: var(--toolbarbutton-border-radius) !important;
 }
-.searchbar-engine-one-off-item, .urlbarView-row-inner, .downloadButton-row-inner, .downloadButton, .download-state, button {
+
+.searchbar-engine-one-off-item,
+.urlbarView-row-inner,
+.downloadButton-row-inner,
+.downloadButton,
+.download-state,
+button {
 	transition: var(--userChrome-animation-speed) !important;
 	border-radius: var(--toolbarbutton-border-radius) !important;
 }
-toolbarbutton, .tab-close-button, .subviewbutton, stack, .toolbarbutton-icon, vbox, #identity-box, #tracking-protection-icon-container, #identity-icon-box, #identity-permission-box, #star-button-box, #contextual-feature-recommendation > #cfr-button, #reader-mode-button, #appMenu-zoomReset-button2 .toolbarbutton-text, #urlbar-zoom-button, .urlbarView-action, .urlbar-addon-page-action, toolbarpaletteitem, .tab-icon-overlay, #allTabsMenu-allTabsViewTabs > .all-tabs-item {
+
+toolbarbutton,
+.tab-close-button,
+.subviewbutton,
+stack,
+.toolbarbutton-icon,
+vbox,
+#identity-box,
+#tracking-protection-icon-container,
+#identity-icon-box,
+#identity-permission-box,
+#star-button-box,
+#contextual-feature-recommendation > #cfr-button,
+#reader-mode-button,
+#appMenu-zoomReset-button2 .toolbarbutton-text
+ #urlbar-zoom-button,
+ .urlbarView-action,
+ .urlbar-addon-page-action,
+ toolbarpaletteitem,
+ .tab-icon-overlay,
+ #allTabsMenu-allTabsViewTabs > .all-tabs-item {
 	transition: var(--userChrome-animation-speed) !important;
 }

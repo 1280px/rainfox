@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 /* hide system context menus */
 menu, menuitem, menucaption, .autocomplete-richlistbox, .autocomplete-richlistitem {
@@ -77,23 +77,39 @@ slot {
 }
 
 /* menus theme-adaptive colours */
-menu, menuitem, menucaption, .ac-title-text, .labels-wrapper > .label-row {
+menu, 
+menuitem, 
+menucaption, 
+.ac-title-text, 
+.labels-wrapper > .label-row {
 	color: var(--arrowpanel-color) !important;
 }
-.popup-internal-box, .autocomplete-richlistbox, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
+.popup-internal-box, 
+.autocomplete-richlistbox, 
+#PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
 	background: var(--arrowpanel-background) !important;
 	border: 0px !important;
 }
-menu:hover:not([disabled="true"]), menuitem:hover:not([disabled="true"]), menucaption:hover:not([disabled="true"]), menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]), .autocomplete-richlistitem:hover {
-	background: var(--panelview-toolbarbutton-hover-bgcolor) !important;
+menu:hover:not([disabled="true"]), 
+menuitem:hover:not([disabled="true"]), 
+menucaption:hover:not([disabled="true"]), 
+.autocomplete-richlistitem:hover {
+	background: var(--panel-item-hover-bgcolor) !important;
 }
 
-menu[disabled="true"], menuitem[disabled="true"], menucaption[disabled="true"], .ac-title-text[disabled="true"] {
+menu[disabled="true"], 
+menuitem[disabled="true"], 
+menucaption[disabled="true"], 
+.ac-title-text[disabled="true"] {
 	color: var(--arrowpanel-color, rgba(127,127,127,0.5)) !important;
 	opacity: 50%;
 }
-menu:active:not([disabled="true"]), menuitem:active:not([disabled="true"]), menucaption:active:not([disabled="true"]), #allTabsMenu-allTabsViewTabs > .all-tabs-item:hover:active, .autocomplete-richlistitem:active {
-	background-color: var(--panelview-toolbarbutton-active-bgcolor) !important;
+menu:active:not([disabled="true"]), 
+menuitem:active:not([disabled="true"]), 
+menucaption:active:not([disabled="true"]), 
+#allTabsMenu-allTabsViewTabs > .all-tabs-item:hover:active, 
+.autocomplete-richlistitem:active {
+	background-color: var(--panel-item-active-bgcolor) !important;
 	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
 }
 
@@ -113,7 +129,9 @@ menupopup menuseparator {
 	padding: 2px;
 	margin-top: 2px !important;
 }
-#identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after {
+#identity-popup-mainView .subviewbutton-nav::after, 
+.widget-overflow-list .subviewbutton-nav::after, 
+.PanelUI-subView .subviewbutton-nav::after {
 	fill-opacity: 1.0 !important;
 }
 toolbarbutton {
@@ -140,7 +158,8 @@ toolbarbutton {
 .panel-subview-body > toolbarbutton > .toolbarbutton-icon {
 	margin-right: 6px !important;
 }
-.addon-banner-item, .panel-banner-item, #appMenu-fxa-status2:not([fxastatus="signedin"]) {
+.addon-banner-item, .panel-banner-item, 
+#appMenu-fxa-status2:not([fxastatus="signedin"]) {
 	margin: 0px 8px 4px !important;
 }
 
@@ -161,7 +180,8 @@ toolbarbutton {
 	margin-right: 12px;
 }
 #fxa-manage-account-button {
-	height: 44px !important;
+	height: 40px !important;
+	padding-left: 16px !important;
 }
 #appMenu-fxa-status2 {
 	padding: 0 !important;
@@ -176,11 +196,26 @@ toolbarbutton {
 	margin-top: 3px !important;
 }
 
+/* hide account email unless hovered */
+toolbarbutton #appMenu-header-description {
+	background-color: var(--arrowpanel-color);
+	transition: 200ms;
+}
+toolbarbutton:hover #appMenu-header-description {
+	background-color: #0000;
+}
+
+
 /* zoom buttons (proton menu panel) */
-#appMenu-zoomReduce-button2, #appMenu-zoomReset-button2, #appMenu-zoomEnlarge-button2, #appMenu-fullscreen-button2 {
+#appMenu-zoomReduce-button2, 
+#appMenu-zoomReset-button2, 
+#appMenu-zoomEnlarge-button2, 
+#appMenu-fullscreen-button2 {
 	padding: 0px 4px !important;
 }
-#appMenu-zoomReduce-button2 > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2 > .toolbarbutton-icon, #appMenu-fullscreen-button2 > .toolbarbutton-icon {
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon, 
+#appMenu-fullscreen-button2 > .toolbarbutton-icon {
 	width: 18px !important;	height: 18px !important;
 	padding: 2px !important;
 }
@@ -190,14 +225,22 @@ toolbarbutton {
 toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
 	margin: 0px !important;
 }
-#appMenu-fullscreen-button2 > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2 > .toolbarbutton-icon, #appMenu-zoomReduce-button2 > .toolbarbutton-icon {
+#appMenu-fullscreen-button2 > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon,
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon {
 	background-color: var(--zoom-controls-bgcolor, var(--button-bgcolor, ButtonFace));
 }
-#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-text, #appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, #appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon {
-	background-color: var(--button-hover-bgcolor) !important;
+#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-text, 
+#appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
+#appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon {
+	background-color: var(--panel-item-hover-bgcolor) !important;
 }
-#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-text, #appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, #appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, #appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon {
-	background-color: var(--button-active-bgcolor) !important;
+#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-text, 
+#appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
+appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
+#appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon {
+	background-color: var(--panel-item-active-bgcolor) !important;
 }
 
 /* security panel */
@@ -224,4 +267,12 @@ toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
 /* show compact mode in customization options even if "browser.compactmode.show" set to FALSE (becuase fck that guy who decided to hide it by default) */
 #customization-uidensity-menuitem-compact {
 	display: block !important;
+}
+
+/* bigger font for panel headers */
+#protections-popup-mainView-panel-header-span,
+#identity-popup-mainView-panel-header-span,
+#editBookmarkPanelTitle,
+#panel-header > toolbarbutton > h1 > span {
+	font-size: 1.2em;
 }

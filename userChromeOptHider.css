@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
 
 /* remove navigation buttons from context menu */
 #context-navigation, #context-sep-navigation { display: none !important; }
@@ -38,3 +38,6 @@
 
 /* unhide "Compact mode (not supported)" in customization icon destiny options even if "browser.compactmode.show" is FALSE */
 #customization-uidensity-menuitem-compact {	display: block !important; }
+
+/* remove "Share" option from often used tabs context menu */
+.share-tab-url-item { display: none !important; }
