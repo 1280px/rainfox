@@ -15,14 +15,14 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 
-/* ### ###     Configure variables      ### ### */
+/* ### ###     Configure Variables      ### ### */
 @import "userChromeVariables.css";
 
 
 
 
 
-/* ### ###  Elem animations & rounding  ### ### */
+/* ### ###  Elem Animations & Rounding  ### ### */
 @import "userChromeAnimations.css";
 
 
@@ -37,9 +37,11 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 
-/* ### ###   Context Menus and Panels   ### ### */
+/* ### ###     Legacy Context Menus     ### ### */
 @import "userChromeContextMenus.css";
 
+/* ### ###   ArrowPanel Context Menus   ### ### */
+@import "userChromePanels.css";
 
 /* ### ###   Adaptive Downloads Panel   ### ### */
 @import "userChromeDownloads.css";

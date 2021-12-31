@@ -1,0 +1,129 @@
+/* proton panels general handler */
+.subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
+	margin: 0 0 !important; padding: 0px 12px 0px 10px !important;
+	height: 24px;
+	border-radius: 0px !important;
+	background-color: transparent;
+	fill-opacity: 0.2 !important;
+}
+.panel-subview-body > toolbarbutton > .toolbarbutton-icon {
+	margin-right: 6px !important;
+}
+.addon-banner-item, .panel-banner-item, 
+#appMenu-fxa-status2:not([fxastatus="signedin"]) {
+	margin: 0px 8px 4px !important;
+}
+
+/* back button (proton panels) */
+.panel-header > .subviewbutton-back {
+	border-radius: 1280px !important;
+	padding: 4px 4px !important;
+	margin: 0 0 !important;
+	margin-left: 4px !important;
+}
+
+/* account controls (proton menu panel) */
+#appMenu-header-description {
+	font-weight: 700 !important;
+}
+#fxa-menu-avatar {
+	display: block !important;
+	margin-right: 12px;
+}
+#fxa-manage-account-button {
+	height: 40px !important;
+	padding-left: 16px !important;
+}
+#appMenu-fxa-status2 {
+	padding: 0 !important;
+}
+.syncnow-label {
+	margin-left: 6px !important;
+}
+.pageAction-sendToDevice-device .toolbarbutton-text {
+	padding-top: 3px !important;
+}
+.pageAction-sendToDevice-device .toolbarbutton-icon {
+	margin-top: 3px !important;
+}
+
+/* hide account email unless hovered */
+toolbarbutton #appMenu-header-description {
+	background-color: var(--arrowpanel-color);
+	transition: 200ms;
+}
+toolbarbutton:hover #appMenu-header-description {
+	background-color: #0000;
+}
+
+
+/* zoom buttons (proton menu panel) */
+#appMenu-zoomReduce-button2, 
+#appMenu-zoomReset-button2, 
+#appMenu-zoomEnlarge-button2, 
+#appMenu-fullscreen-button2 {
+	padding: 0px 4px !important;
+}
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon, 
+#appMenu-fullscreen-button2 > .toolbarbutton-icon {
+	width: 18px !important;	height: 18px !important;
+	padding: 2px !important;
+}
+#zoom-in-button > .toolbarbutton-icon {
+	padding-inline-start: 0px !important;
+}
+toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
+	margin: 0px !important;
+}
+#appMenu-fullscreen-button2 > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon,
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon {
+	background-color: var(--zoom-controls-bgcolor, var(--button-bgcolor, ButtonFace));
+}
+#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-text, 
+#appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
+#appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon {
+	background-color: var(--panel-item-hover-bgcolor) !important;
+}
+#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-text, 
+#appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
+appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
+#appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon {
+	background-color: var(--panel-item-active-bgcolor) !important;
+}
+
+/* security panel */
+#identity-popup-clear-sitedata-footer {
+	margin-top: 4px !important;
+}
+.panel-footer.panel-footer-menulike > button {
+	margin: 6px 0 0 !important;
+}
+.identity-popup-security-connection.identity-button {
+	background-position-x: 2px !important;
+}
+
+/* all tab view panel */
+#allTabsMenu-allTabsViewTabs > .all-tabs-item {
+	margin-inline: 0px !important;
+	border-radius: 0px !important;
+}
+#allTabsMenu-allTabsViewTabs > .all-tabs-item[selected] {
+	background-color: color-mix(in srgb, var(--panelview-toolbarbutton-active-bgcolor) 30%, #fff0) !important;
+	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
+}
+
+/* show compact mode in customization options even if "browser.compactmode.show" set to FALSE (becuase fck that guy who decided to hide it by default) */
+#customization-uidensity-menuitem-compact {
+	display: block !important;
+}
+
+/* bigger font for panel headers */
+#protections-popup-mainView-panel-header-span,
+#identity-popup-mainView-panel-header-span,
+#editBookmarkPanelTitle,
+#panel-header > toolbarbutton > h1 > span {
+	font-size: 1.2em;
+}
