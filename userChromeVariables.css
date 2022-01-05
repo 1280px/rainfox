@@ -1,18 +1,30 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 * { 
-	/* how fast animations will be (including bookmarks pane animation). set to "0.02s" (not "0s"!!! otherwise autohide bookmarkbar will break) for no animations */
-	--userChrome-animation-speed: 0.2s;            
-	
-	/* roundness of most of the buttons and URLbar. 10+px values look pretty bad */
+	/* how fast animations will be (including bookmarks pane slide in/out). [default: 0.2s]
+	set to "0.02s" (not "0s"!!! otherwise autohide bookmarkbar will break) for no animations */
+	--userChrome-animation-speed: 0.2s;
+
+
+	/* roundness of most of the buttons and URLbar. [default: 3px]
+	10+px values look pretty bad */
 	--toolbarbutton-border-radius: 3px;
-	
-	/* roundness of the corners of context menus and panels. */
+
+
+	/* roundness of the corners of context menus and panels. [default: 3px] */
 	--userChrome-cmenu-rounding: 3px;
-	
-	/* roundness of the corners of tabs. */
+
+
+	/* roundness of the corners of tabs. [default: 10px] */
 	--userChrome-tab-rounding: 10px;
-	
-	/* shadowness of tabs and tabbar separator. use 0px to get rid of the shadow completely. values less than 0 aren't supported! */
+
+
+	/* tabs and tabbar separator shadow radius. [default: 2px]
+	use 0px to get rid of the shadow completely; values less than 0 not supported */
 	--userChrome-tabbar-shadow: 2px;
+
+
+	/* visibility of tabs and tabbar outline (used by custom themes). [default: 0px]
+	"1px" to show, "0px" to hide; other values not supported */
+	--userChrome-tab-outline-vis: 0px;
 }
