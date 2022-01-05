@@ -1,3 +1,1 @@
-Photon UI icons made by Mozilla and use MPL-2 license. 
-
-More icons: (icons repo goes here)
+Photon UI icons made by Mozilla and licensed under MPL-2 license.
