@@ -28,7 +28,7 @@ The idea behind this style is to keep Proton interface clarity and simplicity wh
 <br><br>
 
 <h1 align=center>/ / /　// /　Installation　//　 / // /</h1><ol>
-  <li>Make sure you're using <b>Mozilla Firefox 96</b> or newer <i>(looking for pre-Proton version? Check <a href="https://github.com/1280px/rainfox/releases/tag/v0.3">release v3.0!</a>)</i>
+  <li>Make sure you're using <b>Mozilla Firefox 96</b> or newer <i>(looking for pre-Proton version? Check <a href="https://github.com/1280px/rainfox/releases/tag/v0.3">release v0.3!</a>)</i>
   <li>Download the latest build from <b>Code > Download ZIP</b> and extract folder <code>rainfox-master</code>
   <li>Go to <code>about:profiles</code>, find your profile, open <b>root</b> folder and create a folder <code>chrome</code> inside of it. If the folder already exists, wipe all its content
   <li>Move everything from <code>rainfox-master</code> to <code>chrome</code>
