@@ -104,18 +104,19 @@ toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
 }
 #appMenu-fullscreen-button2 > .toolbarbutton-icon, 
 #appMenu-zoomEnlarge-button2 > .toolbarbutton-icon,
-#appMenu-zoomReduce-button2 > .toolbarbutton-icon {
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon,
+#appMenu-fullscreen-button2 > .toolbarbutton-icon {
 	background-color: var(--zoom-controls-bgcolor, var(--button-bgcolor, ButtonFace));
 }
-#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-text, 
+#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
 #appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
 #appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon, 
 #appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover) > .toolbarbutton-icon {
 	background-color: var(--panel-item-hover-bgcolor) !important;
 }
-#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-text, 
+#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
 #appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
-appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
+#appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon, 
 #appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active) > .toolbarbutton-icon {
 	background-color: var(--panel-item-active-bgcolor) !important;
 }
