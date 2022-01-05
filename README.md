@@ -1,16 +1,16 @@
-<h1 align=center>/　 // /　/　☔ RainFox 0.5.3<sup>β</sup>　//　/ /　/</h1>
+<h1 align=center>/　 // /　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
-<br><i>it's like Photon, but better</i></p>
+<br><i>Photon UI, reimagined</i></p>
 
-
-Started as a remix of MaterialFox and QuietFox, the main task of this userChrome style is to make Firefox more consistant, smooth and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks<br>
+Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the main task of this userChrome style is to make Firefox interface more consistant, smooth and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks<br>
 The idea behind this style is to keep Proton interface clarity and simplicity while re-implementing nice and unique Photon's icons and general look & feel.
 
+<br><br>
 
 <h1 align=center>/ //　/   /　/　Features　/　//　/ / //</h1>
-<i>keep in mind that the style is modular so you can easily enable or disable most almost anything you want!</i>
+<i>keep in mind that this style is modular, you can easily enable/disable almost everything you want!</i>
 <pre><p align=center>Good ol' Photon UI icons<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat0.webp" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/sample.png" align=center></img></p></pre>
 <pre><p align=center>Pre-Proton rounded tabs without lines<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
 <pre><p align=center>Photon-ish context menus and panels!<br>
@@ -21,26 +21,59 @@ The idea behind this style is to keep Proton interface clarity and simplicity wh
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat4.webp" align=center></img></p></pre>
 <pre><p align=center>Hourglass tab loading animation<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat5.webp" align=center></img></p></pre>
-<pre><p align=center><b><big>[X] disabled by default</big></b><br>Paranoia mode (unselected tabs are hidden until you hover it)<br>
+<pre><p align=center><b>[ disabled by default ]</b><br>Paranoia mode (unselected tabs are hidden until you hover it)<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
-
-<h1 align=center>/ / /　// /　Requirements　//　 / // /</h1><ul>
-<li>Mozilla Firefox 96.0 or newer <i>(looking for pre-Proton version? Check <a href="https://github.com/1280px/rainfox/releases/tag/v0.3">release v3.0!</a>)</i>
-<li><code>toolkit.legacyUserProfileCustomizations.stylesheets == <b>TRUE</b></code> <i>(necessary; enables custom CSS)</i>
-<li><code>svg.context-properties.content.enabled == <b>TRUE</b></code> <i>(necessary; allows custom SVGs use context colors)</i>
-<li><code>security.secure_connection_icon_color_gray == <b>FALSE</b></code> <i>(recommended; uses green color for secure connection icons)</i>
-</ul>
-<!--<b>Style was tested on Firefox 90 @ Windows 10 (100% and 125% scaling).<br>I'll appreciate your feedback from other systems! (especially from macOS and Linux)</b>-->
 <br><br>
-<small><i>Style doesn't work? Check <a href="https://github.com/1280px/rainfox/blob/master/!!%20help%20help%20style%20doesnt%20work.txt">this step-by-step guide</a> to find a solution!</i></small>
 
+<h1 align=center>/ / /　// /　Installation　//　 / // /</h1><ol>
+  <li>Make sure you're using <b>Mozilla Firefox 96</b> or newer <i>(looking for pre-Proton version? Check <a href="https://github.com/1280px/rainfox/releases/tag/v0.3">release v3.0!</a>)</i>
+  <li>Download the latest build from <b>Code > Download ZIP</b> and extract folder <code>rainfox-master</code>
+  <li>Go to <code>about:profiles</code>, find your profile, open <b>root</b> folder and create a folder <code>chrome</code> inside of it. If the folder already exists, wipe all its content
+  <li>Move everything from <code>rainfox-master</code> to <code>chrome</code>
+  <li>Now open <code>about:config</code> and change these values to <code><b>true</b></code>:<ul>
+    <li><code>toolkit.legacyUserProfileCustomizations.stylesheets</code> <i>(<b>necessary</b>; enables custom CSS)</i>
+    <li><code>layout.css.color-mix.enabled</code> <i>(<b>necessary</b>; allows context menus use hover and active color states)</i>
+    <li><code>svg.context-properties.content.enabled</code> <i>(<b>necessary</b>; allows Photon icons use theme colors)</i>
+    <li><code>security.secure_connection_icon_color_gray</code> <i>(<b>recommended</b>; uses green color for secure connection icons)</i></ul>
+  <li>Restart Firefox. PROFIT!</ol>
+
+<table >
+	<tbody>
+		<tr>
+      <td colspan=3 align=center><b>style compatibility sheet</b></td>
+		</tr><tr>
+			<td>Windows 11</td><td align=center>✔️</td>
+			<td><i>no issues found.</i></td>
+		</tr><tr>
+			<td>Windows 10</td><td align=center>✔️</td>
+			<td><i>no issues found.</i></td>
+		</tr><tr>
+			<td>Windows 8.1</td><td align=center>🔘</td>
+			<td>rare transparency glitches if you're using <a href="https://www.glass8.eu/">Aero Glass</a> and system theme</td>
+		</tr><tr>
+			<td>Windows 7</td><td align=center>🔘</td>
+			<td>rare transparency glitches if you're using system theme</td>
+		</tr><tr>
+			<td>GNOME 4X</td><td align=center>⚠️</td>
+			<td>context menu margins and icons aren't shown properly</td>
+		</tr><tr>
+			<td>Pantheon</td><td align=center>⚠️</td>
+			<td>context menu margins and icons aren't shown properly</td>
+		</tr><tr>
+			<td>KDE</td><td align=center>❔</td>
+			<td><i>NEEDS TESTING</i></td>
+		</tr><tr>
+	</tbody>
+</table>
+
+<br><br>
 
 <h1 align=center>/ //　/　//　Known Issues　// / /　 / /</h1><ol>
-<h3 align=center>Please check if you're using the last version of RainFox before reporting as issue!</h3>
-<li>Tab overflow can go crazy sometimes; open a new window to fix
-<li>Some icon animations are partially broken
+<h3 align=center>Please check if you're using the last build of RainFox before reporting as issue!</h3>
+<li>Icons may not scale properly if you're using non-100% scaling
+<li>Some icon animations are partially broken (workin' on it)
 <li>Bookmarks bar may work incorrectly sometimes when drag'n'dropping stuff</ol>
 
 <br><br>
