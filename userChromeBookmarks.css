@@ -1,10 +1,11 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 /* center bookmarks */
 #PlacesToolbarItems {
 	justify-content: center !important;
 	display: flex !important;
 	overflow: hidden !important;
+	margin-top: -2px; margin-bottom: 2px;
 }
 	
 /* show/hide animation */
@@ -14,13 +15,8 @@
 	transition: var(--userChrome-animation-speed) !important;
 	opacity: 0% !important;
 }
-#navigator-toolbox:hover > #PersonalToolbar {
+#navigator-toolbox:hover > #PersonalToolbar, #navigator-toolbox:focus > #PersonalToolbar, #navigator-toolbox:focus-within > #PersonalToolbar {
 	visibility: visible !important; 
 	transform: translateY(0%) !important;
 	opacity: 100% !important;
-}
-
-/* hide "more bookmarks" chevron (it seems it's almost impossible to overflow bookmarkbar with "display: flex" property) */
-#PlacesChevron {
-	display: none !important;
 }
