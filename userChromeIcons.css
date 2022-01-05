@@ -1,4 +1,4 @@
-/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 /* context menus arrows */
 .menu-right, #identity-popup-mainView .subviewbutton-nav::after, .widget-overflow-list .subviewbutton-nav::after, .PanelUI-subView .subviewbutton-nav::after, #protections-popup-mainView .subviewbutton-nav:not(.notFound)::after {
@@ -220,11 +220,11 @@ menuitem[checked="true"] > .menu-iconic-left {
 #downloads-button > .toolbarbutton-badge-stack > #downloads-indicator-progress-outer {	top: calc(50% - 10px); left: calc(50% - 10px);	width: 20px; height: 20px; border-width: 2px !important; }
 #downloads-indicator-progress-inner {	width: 16px; height: 16px; }
 
-/* tab action icons */
+/* tab action icons (+ shadow filters) */
 .tab-icon-overlay[soundplaying], .all-tabs-secondary-button[soundplaying] {
-	list-style-image: url(".icon/tab-audio.svg") !important; }
+	list-style-image: url(".icon/tab-audio.svg") !important; filter: drop-shadow( 0 0 1px var(--toolbar-bgcolor)); }
 .tab-icon-overlay[muted], .all-tabs-secondary-button[muted] {
-	list-style-image: url(".icon/tab-audio-off.svg") !important; }
+	list-style-image: url(".icon/tab-audio-off.svg") !important; filter: drop-shadow( 0 1px var(--toolbar-bgcolor)); }
 .close-icon {
 	list-style-image: url(".icon/tab-close.svg") !important; }
 
