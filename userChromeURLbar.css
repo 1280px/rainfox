@@ -1,4 +1,4 @@
-/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 .urlbarView-body-inner {
 	border-color: var(--panel-separator-color) !important;
@@ -16,15 +16,22 @@
 	margin-inline-end: 4px !important;
 }
 
+/* make Firefox Suggests separation more subtle */
+.urlbarView-row[label]::before {
+	font-size: 0 !important;
+	opacity: 1 !important;
+	width: 100%;
+	top: -3px !important;
+	border-top: 1px dashed var(--autocomplete-popup-separator-color);
+}
+.urlbarView-row[label] {
+	margin-block-start: 5px !important;
+}
+
 /* remove default border */
 #urlbar-background, #searchbar {
 	border: 0px solid transparent !important;
 	border-radius: var(--toolbarbutton-border-radius);
-}
-
-/* remove "Firefox Suggest" */
-.urlbarView-row[label] {
-	display: none;
 }
 
 /* focused state - use shadow and remove outline */
