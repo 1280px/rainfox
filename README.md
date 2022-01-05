@@ -1,4 +1,4 @@
-<h1 align=center>/　 // /　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
+<h1 align=center>/ //　/　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
 <br><i>Photon UI, reimagined</i></p>
 
