@@ -1,4 +1,4 @@
-/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 /* hide system context menus */
 menu, menuitem, menucaption, .autocomplete-richlistbox, .autocomplete-richlistitem {
@@ -53,11 +53,23 @@ menu > .menu-text, menuitem > .menu-text, menu > .menu-iconic-text, menuitem > .
 	margin-inline-start: 0 !important;
 }
 
+/* PlacesToolbar fixes */
+#PlacesToolbar menuitem, #PlacesToolbar menu {
+	margin: 0 !important;
+	border-radius: 0 !important;
+}
+#PlacesToolbar menu > .menu-iconic-text, #PlacesToolbar menuitem > .menu-iconic-text {
+	padding-inline-start: 0px !important;
+}
+#PlacesToolbar menupopup[placespopup="true"] menuseparator::before {
+	border: none !important;
+}
+
 /* shadows & corners for menus */
 .popup-internal-box, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
 	border-radius: var(--userChrome-cmenu-rounding) !important;
 	box-shadow: 0px 1px 10px -3px #0009 !important;
-	padding: 6px 0 !important;
+	padding: 4px 0 !important;
 }
 
 slot {
@@ -115,7 +127,7 @@ menucaption[disabled="true"],
 
 /* menu separator */
 menupopup menuseparator {
-	margin: 5px 10px !important; padding: 0px !important;
+	margin: 4px 10px !important; padding: 0px !important;
 	border-bottom: none !important;
 	opacity: 50% !important;
 	border-top: 1px solid var(--panel-separator-color) !important;
