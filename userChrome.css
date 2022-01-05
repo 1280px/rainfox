@@ -1,9 +1,9 @@
 /*   /   /  //   /    /  /     /  /    /   /       /   
 /______   / / __    /   _____ .. /. ___  ___  /   /   /
-|      \.--.-(ЖЖ)-----./  __/ ЖЖЖЖЖ \  \/  / / 0.5.3 / 
+|      \.--.-(ЖЖ)-----./  __/ ЖЖЖЖЖ \  \/  / /  5.3  / 
 |      /     |  |  .  |   _| ЖЖЖЖЖЖЖ /    /  2019-2022 
 |__|\__\___._|__|__|__|__|      J   /__/\__\      /   /
-  -- info and updates:   github.com/1280px/rainfox --  
+  --  info and updates: github.com/1280px/rainfox  --  
 
 To disable/enable some part of the style, add/remove "/* " before its @import. Example:
 
@@ -40,8 +40,10 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 /* ### ###     Legacy Context Menus     ### ### */
 @import "userChromeContextMenus.css";
 
+
 /* ### ###   ArrowPanel Context Menus   ### ### */
 @import "userChromePanels.css";
+
 
 /* ### ###   Adaptive Downloads Panel   ### ### */
 @import "userChromeDownloads.css";
