@@ -1,14 +1,19 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
-/* make sure you selected only ONE of the options. Option 1 is default */
+/* make sure you selected only ONE of the options.
+Remove this file or disable both rules below to use proton-like (lines at the top) */
 
-/* option 1: show containers as lines at the tab bottom (photon-like) */
+
+
+/* option 1: photon-like (show containers as lines at the tab bottom) */
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
 	border-radius: 12px 14px 0 0 !important;
 	margin-top: calc( var(--tab-min-height) - 4px) !important;
 }/**/
 
-/* option 2: show container as a part of tab background
+
+
+/* option 2: australis-like (show container as a tab background) 
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
 	border-radius: var(--userChrome-tab-rounding) var(--userChrome-tab-rounding) 0px 0px !important;
 }

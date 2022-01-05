@@ -1,4 +1,4 @@
-/* 　/ //　/　/　　RainFox v0.5 　//　/ /　　// ☔ Based on MaterialFox and QuietFox | 2019-2021 */
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
 /* proton-ish tabs (not disconnected from tabbar anymore; no tab-line; roundness) */
 .tabbrowser-tab {
@@ -13,19 +13,24 @@
 	margin-bottom: -2px !important; /* change this value to make tabs smaller/bigger (container stripes will be broken!!). min = -5; max = 0 */
 }
 
-/* make gaps between tabs a little bit smaller without breaking the shadow (works only with unpinned tabs) */
+
+
+/* make gaps between tabs a little bit smaller without breaking the shadow (disabled bc seems to breaking tab overflow, temp fix (breaks the shadow) goes below) 
 .tabbrowser-tab:not([pinned]) {
-	margin-inline: -1px !important; /* make gap between bats a little bit smallet without breaking the shadow */
+	margin-inline: -1px !important;
+} /**/
+.tabbrowser-tab {
+	padding-inline: 1px !important;
 }
 
-/* force tabs to use toolbar colors -- ENABLE for better default themes; DISABLE for max compatibility with Australis custom themes */
+/* force tabs to use toolbar colors -- DISABLE for max compatibility with custom themes */
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected="true"]:-moz-lwtheme, #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected="true"]:-moz-lwtheme {
 	background: var(--toolbar-bgcolor) !important;
 }
 
 /* small gap between pinned and regular tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
-	margin-inline-start: 4px !important;
+	margin-inline-start: 2px !important;
 }
 
 /* fix pinned tabs get shifted to the right if tabbar is overflown. DISABLE if your tabs get shifted to the left (you probably using Firefox 90 release since this shift to the right is actually a Firefox bug) */
@@ -33,17 +38,40 @@
 	transform: translateX(-28px);
 }
 
-/* tab shadows */
+
+
+/* tabs shadow */
 #TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
-	box-shadow: 0 0 0px var(--tab-line-color), 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
+	box-shadow: 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
 }
-#nav-bar {
-	box-shadow: 0 -1px var(--userChrome-tabbar-shadow) var(--tabs-border-color) !important;
+
+/* legacy tab shadows -- ENABLE for max compatibility with legacy custom themes 
+#TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+	box-shadow: 0 0 0px var(--tab-line-color) !important;
+}/**/
+
+/* tabs outline */
+.tab-background {
+	border: 0px solid transparent !important;
+	outline: calc(var(--userChrome-tab-outline-vis) * 3) solid transparent;
 }
+.tab-background:is([selected], [multiselected]):-moz-lwtheme {
+  outline: var(--userChrome-tab-outline-vis) solid var(--lwt-tab-line-color, var(--lwt-tabs-border-color, currentColor));
+}
+
+
+
 
 /* overflow buttons */
 #scrollbutton-up, #scrollbutton-down {
 	padding: calc(var(--toolbarbutton-inner-padding) - 4px) calc(var(--toolbarbutton-inner-padding) - 8px) !important;
+}
+
+/* close button */
+.tab-close-button {
+	padding: 4px !important;
+	border-radius: 1280px !important;
+	width: 21px !important;	height: 21px !important;
 }
 
 /* old-styled ctrl buttons (currently located at left, try to change to the classic look indafuture) */
@@ -77,11 +105,4 @@
 .tab-icon-overlay:not([pinned]) {
 	width: 19px !important;	height: 19px !important;
 	margin-left: -2px !important;
-}
-
-/* close button */
-.tab-close-button {
-	padding: 4px !important;
-	border-radius: 1280px !important;
-	width: 21px !important;	height: 21px !important;
 }

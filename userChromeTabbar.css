@@ -1,9 +1,18 @@
-/*　　　 / //　/　/　 ☔ RainFox | 2019-2022 　//　/ /　 // 　　　*/
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
 
-/* tabbar zone improvements */
 #navigator-toolbox {
 	--tabs-border-color: #4442 !important; /* do not use any theme colors for tab and tabbar shadow */
 	border-bottom: 0px solid var(--toolbar-bgcolor) !important; /* remove 1px line under navbar */
+}
+
+/* tabbar shadow */
+#nav-bar {
+	box-shadow: 0 -1px var(--userChrome-tabbar-shadow) var(--tabs-border-color) !important;
+}
+
+/* tabbar outline */
+#nav-bar {
+	outline: var(--userChrome-tab-outline-vis) solid currentColor;
 }
 
 /* remove gap before tabs */
@@ -31,8 +40,8 @@
 	padding: calc((var(--tab-min-height) - 20px) / 2) !important;
 }
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-text, #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
-	border-radius: var(--tab-border-radius);
-	padding: calc( var(--toolbarbutton-inner-padding) - 2px);
+	border-radius: var(--tab-border-radius) !important;
+	padding: calc( var(--toolbarbutton-inner-padding) - 2px) !important;
 }
 toolbar .toolbarbutton-1 {
 	padding: 2px 2px !important;
