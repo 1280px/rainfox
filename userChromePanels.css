@@ -1,3 +1,5 @@
+/*     / //  /  /   ☔ RainFox 5.3 | 2019-2022   //  / /  /     */
+
 /* proton panels general handler */
 .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
 	margin: 0 0 !important; padding: 0px 12px 0px 10px !important;
@@ -9,10 +11,28 @@
 .panel-subview-body > toolbarbutton > .toolbarbutton-icon {
 	margin-right: 6px !important;
 }
-.addon-banner-item, .panel-banner-item, 
-#appMenu-fxa-status2:not([fxastatus="signedin"]) {
-	margin: 0px 8px 4px !important;
+
+/* smaller gaps between panel and 1st/last menu item */
+.panel-subview-body {
+	padding: 4px 0 !important;
 }
+
+/* bigger font for panel headers */
+#protections-popup-mainView-panel-header-span,
+#identity-popup-mainView-panel-header-span,
+#editBookmarkPanelTitle,
+#permission-popup-mainView-panel-header-span,
+.panel-header > h1 > span {
+	font-size: 1.2em;
+	margin: -3px;
+}
+
+/* remove black rounded corners from some extension panels */
+:root {
+	--arrowpanel-border-radius: 0px !important;
+}
+
+
 
 /* back button (proton panels) */
 .panel-header > .subviewbutton-back {
@@ -25,6 +45,10 @@
 /* account controls (proton menu panel) */
 #appMenu-header-description {
 	font-weight: 700 !important;
+}
+.addon-banner-item, .panel-banner-item, 
+#appMenu-fxa-status2:not([fxastatus="signedin"]) {
+	margin: 0px 8px 4px !important;
 }
 #fxa-menu-avatar {
 	display: block !important;
@@ -46,18 +70,20 @@
 .pageAction-sendToDevice-device .toolbarbutton-icon {
 	margin-top: 3px !important;
 }
-
 /* hide account email unless hovered */
-toolbarbutton #appMenu-header-description {
-	background-color: var(--arrowpanel-color);
+#appMenu-fxa-status2[fxastatus="signedin"] > toolbarbutton #appMenu-header-description {
+	background: var(--panel-separator-color);
+	color: transparent;
 	transition: 200ms;
+	border-radius: var(--toolbarbutton-border-radius);
 }
-toolbarbutton:hover #appMenu-header-description {
-	background-color: #0000;
+#appMenu-fxa-status2[fxastatus="signedin"] > toolbarbutton:hover #appMenu-header-description {
+	background-color: transparent;
+	color: unset;
+	border-radius: 0;
 }
 
-
-/* zoom buttons (proton menu panel) */
+/* zoom buttons (app menu) */
 #appMenu-zoomReduce-button2, 
 #appMenu-zoomReset-button2, 
 #appMenu-zoomEnlarge-button2, 
@@ -105,7 +131,7 @@ appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbar
 	background-position-x: 2px !important;
 }
 
-/* all tab view panel */
+/* all tabs overview panel */
 #allTabsMenu-allTabsViewTabs > .all-tabs-item {
 	margin-inline: 0px !important;
 	border-radius: 0px !important;
@@ -113,17 +139,4 @@ appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active) > .toolbar
 #allTabsMenu-allTabsViewTabs > .all-tabs-item[selected] {
 	background-color: color-mix(in srgb, var(--panelview-toolbarbutton-active-bgcolor) 30%, #fff0) !important;
 	box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
-}
-
-/* show compact mode in customization options even if "browser.compactmode.show" set to FALSE (becuase fck that guy who decided to hide it by default) */
-#customization-uidensity-menuitem-compact {
-	display: block !important;
-}
-
-/* bigger font for panel headers */
-#protections-popup-mainView-panel-header-span,
-#identity-popup-mainView-panel-header-span,
-#editBookmarkPanelTitle,
-#panel-header > toolbarbutton > h1 > span {
-	font-size: 1.2em;
 }
