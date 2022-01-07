@@ -12,7 +12,8 @@
 
 /* tabbar outline */
 #nav-bar {
-	outline: var(--userChrome-tab-outline-vis) solid currentColor;
+  outline: calc(var(--userChrome-tab-outline-vis) - 1px) solid currentColor;
+	outline-color: var(--tab-line-color);
 }
 
 /* remove gap before tabs */

@@ -24,7 +24,7 @@
 	--userChrome-tabbar-shadow: 2px;
 
 
-	/* visibility of tabs and tabbar outline (used by custom themes). [default: 0px]
-	"1px" to show, "0px" to hide; other values not supported */
+	/* visibility of active tab and tabbar outline (used by custom themes). [default: 0px]
+	"2px" - tabbar and active tab, "1px" - only active tab, "0px" - off; other values not supported */
 	--userChrome-tab-outline-vis: 0px;
 }
