@@ -22,13 +22,12 @@
 .tabbrowser-tab {
 	padding-inline: 1px !important;
 }
-
-/* force tabs to use toolbar colors -- DISABLE for max compatibility with custom themes */
-#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected="true"]:-moz-lwtheme, #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected="true"]:-moz-lwtheme {
-	background: var(--toolbar-bgcolor) !important;
+/* make tabs min width a little smaller */
+.tabbrowser-tab {
+  --tab-min-width: 58px !important;
 }
 
-/* small gap between pinned and regular tabs */
+/* smaller gap between pinned and regular tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
 	margin-inline-start: 2px !important;
 }
@@ -40,11 +39,15 @@
 
 
 
+/* force tabs to use toolbar colors -- DISABLE for max compatibility with custom themes */
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected="true"]:-moz-lwtheme, #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected="true"]:-moz-lwtheme {
+	background: var(--toolbar-bgcolor) !important;
+}
+
 /* tabs shadow */
 #TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
 	box-shadow: 0 0 var(--userChrome-tabbar-shadow) 1px var(--tabs-border-color) !important;
 }
-
 /* legacy tab shadows -- ENABLE for max compatibility with legacy custom themes 
 #TabsToolbar #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
 	box-shadow: 0 0 0px var(--tab-line-color) !important;
@@ -53,10 +56,11 @@
 /* tabs outline */
 .tab-background {
 	border: 0px solid transparent !important;
-	outline: calc(var(--userChrome-tab-outline-vis) * 3) solid transparent;
+	outline: calc(calc(var(--userChrome-tab-outline-vis) / 1.66) * 3) solid transparent;
 }
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
-  outline: var(--userChrome-tab-outline-vis) solid var(--lwt-tab-line-color, var(--lwt-tabs-border-color, currentColor));
+  outline: calc(var(--userChrome-tab-outline-vis) / 1.66) solid currentColor; /* CSS increments any float outline width value up to round number */
+	outline-color: var(--tab-line-color);
 }
 
 
