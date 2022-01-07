@@ -8,6 +8,7 @@ Remove this file or disable both rules below to use proton-like (lines at the to
 /* option 1: photon-like (show containers as lines at the tab bottom) */
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
 	border-radius: 12px 14px 0 0 !important;
+	margin: 0 6px !important;
 	margin-top: calc( var(--tab-min-height) - 4px) !important;
 }/**/
 
