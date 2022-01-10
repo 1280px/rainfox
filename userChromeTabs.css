@@ -78,7 +78,7 @@
 	width: 21px !important;	height: 21px !important;
 }
 
-/* old-styled ctrl buttons (currently located at left, try to change to the classic look indafuture) */
+/* old-styled ctrl buttons */
 .tab-secondary-label {
 	display: none !important;
 }
@@ -107,6 +107,6 @@
 	background-color: color-mix(in srgb, currentColor 45%, #9990) !important;
 }
 .tab-icon-overlay:not([pinned]) {
-	width: 19px !important;	height: 19px !important;
-	margin-left: -2px !important;
+	width: 18px !important;	height: 18px !important;
+	margin-left: -1px !important;
 }
