@@ -2,7 +2,7 @@
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
 <br><i>Photon UI, reimagined</i></p>
 
-Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the current goal of this userChrome style is to make Firefox interface smoother, more consistent and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks<br>
+Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the current goal of this userChrome style is to make Firefox interface smoother, more consistent and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks.<br>
 The idea behind this style is to keep Proton UI clarity and simplicity while re-implementing nice and unique Photon's icons and general look & feel.
 
 <br><br>
@@ -12,17 +12,17 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 <pre><p align=center>Over 90 good ol' Photon UI icons<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat0.png" align=center></img></p></pre>
 <pre><p align=center>Pre-Proton rounded tabs without lines<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
 <pre><p align=center>Photon-ish context menus and panels!<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat2.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat2.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide bookmarks panel<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat3.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat3.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide "Forward" button<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat4.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat4.webp" align=center></img></p></pre>
 <pre><p align=center>Hourglass tab loading animation<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat5.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat5.webp" align=center></img></p></pre>
 <pre><p align=center><b>[ disabled by default ]</b><br>Paranoia mode (unselected tabs are hidden until you hover it)<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webm" align=center></img></p></pre>
+<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
 <br><br>
