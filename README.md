@@ -1,17 +1,18 @@
 <h1 align=center>/ //　/　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
-<br><i>Photon UI, reimagined</i></p>
+<br><i>It's like Photon, jsut better</i></p>
 
 Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the current goal of this userChrome style is to make Firefox interface smoother, more consistent and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks.<br>
+
 The idea behind this style is to keep Proton UI clarity and simplicity while re-implementing nice and unique Photon's icons and general look & feel.
 
 <br><br>
 
 <h1 align=center>/　// /　/　Features　/　//　/ /</h1>
-<i align=center>keep in mind that this style is modular, you can easily enable/disable almost everything you want!</i>
+<p align=center><i>Keep in mind this style is modular, you can easily enable/disable almost everything you want!</i></p>
 <pre><p align=center>Over 90 good ol' Photon UI icons<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat0.png" align=center></img></p></pre>
-<pre><p align=center>Pre-Proton rounded tabs without lines<br>
+<pre><p align=center>Pre-Proton-styled rounded tabs<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
 <pre><p align=center>Photon-ish context menus and panels!<br>
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat2.webp" align=center></img></p></pre>
