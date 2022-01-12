@@ -1,6 +1,6 @@
 <h1 align=center>/ //　/　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
 <p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
-<br><i>It's like Photon, jsut better</i></p>
+<br><i>It's like Photon, just better</i></p>
 
 Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the current goal of this userChrome style is to make Firefox interface smoother, more consistent and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks.<br>
 
