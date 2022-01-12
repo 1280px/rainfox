@@ -37,7 +37,7 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 		<li><code>toolkit.legacyUserProfileCustomizations.stylesheets</code> <i>(enables userChrome stylesheets)</i>
 		<li><code>layout.css.color-mix.enabled</code> <i>(allows color-mixes, used for context menus hover and active states)</i>
 		<li><code>svg.context-properties.content.enabled</code> <i>(allows SVG icons use theme colors)</i></ul>
- <li><b>[optionally]</b> If you want your connection icon to be green (like on the picture above), set this key to <code><b>false</b></code>:<ul>
+ <li><b>[optionally]</b> If you want your HTTPS connection icon to be green, set this key to <code><b>false</b></code>:<ul>
 		 <li><code>security.secure_connection_icon_color_gray</code></ul>
 	<li>Restart Firefox. PROFIT!</ol>
 
