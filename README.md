@@ -26,7 +26,7 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 <img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
-<br><br>
+<br>
 
 <h1 align=center>/　/　// /　Installation　//　　/ //</h1><ol>
 	<li>Make sure you're using <b>Mozilla Firefox 96</b> or newer
