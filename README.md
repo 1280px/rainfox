@@ -30,7 +30,7 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 
 <h1 align=center>/　/　// /　Installation　//　　/ //</h1><ol>
 	<li>Make sure you're using <b>Mozilla Firefox 96</b> or newer
-	<li>Download the latest build from <b>Code > Download ZIP</b> and extract folder <code>rainfox-master</code>
+	<li>Download the latest build from <b>Code > Download ZIP</b> and extract folder <code>rainfox-master</code> (or whatever it called)
 	<li>Go to <code>about:profiles</code>, find your profile, open <b>root</b> folder and create a folder <code>chrome</code> inside of it. If the folder already exists, wipe all its content
 	<li>Move everything from <code>rainfox-master</code> to <code>chrome</code> <b>(not the folder itself!)</b>
 	<li>Now open <code>about:config</code> and change these keys to <code><b>true</b></code>:<ul>
@@ -58,27 +58,13 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 			<td>Windows 7</td><td align=center>🔘</td>
 			<td>rare transparency glitches if you're using system theme</td>
 		</tr><tr>
-			<td>GNOME 4X</td><td align=center>⚠️</td>
-			<td>context menu margins and icons aren't shown properly</td>
-		</tr><tr>
-			<td>Pantheon</td><td align=center>⚠️</td>
-			<td>context menu margins and icons aren't shown properly</td>
-		</tr><tr>
-			<td>KDE</td><td align=center>❔</td>
-			<td><i>NEEDS TESTING</i></td>
+			<td>Linux</td><td align=center>⚠️</td>
+			<td>context menus aren't shown properly (check <a href="https://github.com/1280px/rainfox/issues/5">issue #5</a>)</td>
 		</tr><tr>
 	</tbody>
 </table>
 
 <i>Style doesn't work? Check this <a href="https://github.com/1280px/rainfox/blob/master/README-IF-STYLE-DOESNT-WORK.md">step-by-step guide</a> to find a solution!</i>
-
-<br><br>
-
-<h1 align=center>/ //　/　/　Known Issues　// /　/　/</h1><ol>
-<h3 align=center>Please check if you're using the last build of RainFox before reporting an issue!</h3>
-<li>Icons may not scale properly if you're using non-100% scaling
-<li>Some icon animations are partially broken (workin' on it)
-<li>Bookmarks bar may work incorrectly when drag'n'dropping stuff</ol>
 
 <br><br>
 
