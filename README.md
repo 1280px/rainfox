@@ -1,5 +1,5 @@
 <h1 align=center>/ //　/　/　☔ RainFox 5.3<!--<sup>β</sup>-->　//　/ /　/</h1>
-<p align=center><img src="https://github.com/1280px/rainfox/blob/master/.readme-img/header.png"></img>
+<p align=center><img src=".readme-img/header.png"></img>
 <br><i>It's like Photon, just better</i></p>
 
 Started as a remix of <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a> and <a href="https://github.com/coekuss/quietfox">QuietFox</a>, the current goal of this userChrome style is to make Firefox interface smoother, more consistent and theme-adaptive. After Proton redesign came in, this style also tends to be a mix of old and new UIs with additional features and tweaks.<br>
@@ -9,21 +9,21 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 <br><br>
 
 <h1 align=center>/　// /　/　Features　/　//　/ /</h1>
-<p align=center><i>Keep in mind this style is modular, you can easily enable/disable almost everything you want!</i></p>
+<p align=center><i>Keep in mind this style is modular, you can easily enable/disable almost everything you want! <a href="../../issues/8">(how?)</a></i>
 <pre><p align=center>Over 90 good ol' Photon UI icons<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat0.png" align=center></img></p></pre>
+<img src=".readme-img/feat0.png" align=center></img></p></pre>
 <pre><p align=center>Pre-Proton-styled rounded tabs<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat1.webp" align=center></img></p></pre>
+<img src=".readme-img/feat1.webp" align=center></img></p></pre>
 <pre><p align=center>Photon-ish context menus and panels!<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat2.webp" align=center></img></p></pre>
+<img src=".readme-img/feat2.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide bookmarks panel<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat3.webp" align=center></img></p></pre>
+<img src=".readme-img/feat3.webp" align=center></img></p></pre>
 <pre><p align=center>Animated auto-hide "Forward" button<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat4.webp" align=center></img></p></pre>
+<img src=".readme-img/feat4.webp" align=center></img></p></pre>
 <pre><p align=center>Hourglass tab loading animation<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat5.webp" align=center></img></p></pre>
+<img src=".readme-img/feat5.webp" align=center></img></p></pre>
 <pre><p align=center><b>[ disabled by default ]</b><br>Paranoia mode (unselected tabs are hidden until you hover it)<br>
-<img src="https://github.com/1280px/rainfox/blob/master/.readme-img/feat6.webp" align=center></img></p></pre>
+<img src=".readme-img/feat6.webp" align=center></img></p></pre>
 <p align=right><i>..and more!　　　　</i></p>
 
 <br>
@@ -59,12 +59,12 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 			<td>rare transparency glitches if you're using system theme</td>
 		</tr><tr>
 			<td>Linux</td><td align=center>⚠️</td>
-			<td>context menus aren't shown properly (check <a href="https://github.com/1280px/rainfox/issues/5">issue #5</a>)</td>
+			<td>context menus aren't shown properly (check <a href="../../issues5">issue #5</a>)</td>
 		</tr><tr>
 	</tbody>
 </table>
 
-<i>Style doesn't work? Check this <a href="https://github.com/1280px/rainfox/blob/master/README-IF-STYLE-DOESNT-WORK.md">step-by-step guide</a> to find a solution!</i>
+<i>Style doesn't work? Check this <a href="README-IF-STYLE-DOESNT-WORK.md">step-by-step guide</a> to find a solution!</i>
 
 <br><br>
 
