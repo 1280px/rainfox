@@ -9,7 +9,7 @@ The idea behind this style is to keep Proton UI clarity and simplicity while re-
 <br><br>
 
 <h1 align=center>/　// /　/　Features　/　//　/ /</h1>
-<p align=center><i>Keep in mind this style is modular, you can easily enable/disable almost everything you want! <a href="../../issues/8">(how?)</a></i>
+<p align=center><i>Keep in mind this style is modular, you can easily enable/disable almost everything you want! <a href="../../issues/8#issuecomment-1019283911">(how?)</a></i>
 <pre><p align=center>Over 90 good ol' Photon UI icons<br>
 <img src=".readme-img/feat0.png" align=center></img></p></pre>
 <pre><p align=center>Pre-Proton-styled rounded tabs<br>
